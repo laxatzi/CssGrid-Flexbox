@@ -9,6 +9,7 @@ body {
 
 .container {
   display: flex;
+  border: 10px solid goldenrod;
 }
 
 
@@ -27,6 +28,6 @@ body {
 .box5 { background: #803396; }
 .box6 { background: #393D95; }
 .box7 { background:#3BADC9; }
-.box8 { background: #39AFC5; }
+.box8 { background: #16464E; }
 .box9 { background: #E6C33B; }
 .box10 { background: #72B188; }
