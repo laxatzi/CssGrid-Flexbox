@@ -13,15 +13,17 @@ font-size: 18px;
   display: flex;
   border: 10px solid goldenrod;
   min-height: 100vh;
-  
-}
+  flex-direction: column;
+  justify-content: center;
+  }
 
 
 .box {
   color: #fff;
-  font-size: 5rem;
+  font-size: 1rem;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+  padding:  10px;
 }
 
 .box1 { background:#DE933F; }
@@ -35,13 +37,5 @@ font-size: 18px;
 .box9 { background: #E6C33B; }
 .box10 { background: #72B188; }
 
-.box {
-    flex: 1;
-}
 
-.box3 {
-  order: -1;
-}
-.box4 { order: 1; }
-.box5 {order: 2; }
-.box6 { order: 3; }
+
