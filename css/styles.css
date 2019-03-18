@@ -21,10 +21,11 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
     padding:  10px;
-    flex: 1;
+    flex-grow: 1; /* combined with flex-shrink: 1 gives us the equelevant of flex:1 ; */
+    flex-shrink: 1;  /* combined with flex-grow: 1 gives us the equelevant of flex:1 ; */
   }
 
-  .box1 { background:#DE933F; flex:2;}
+  .box1 { background:#DE933F;}
   .box2 { background: #CF3230; }
   .box3 { background:  #484848; }
   .box4 { background: #9D348A; }
