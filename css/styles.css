@@ -12,19 +12,22 @@
   .container {
     display: flex;
     border: 10px solid fuchsia;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
    }
 
 
   .box {
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
     padding:  10px;
-    flex-grow: 1; /* combined with flex-shrink: 1 gives us the equelevant of flex:1 ; */
-    flex-shrink: 1;  /* combined with flex-grow: 1 gives us the equelevant of flex:1 ; */
+    flex-grow: 1;
+    flex-basis: 200px;
   }
-
+ 
   .box1 { background:#DE933F;}
   .box2 { background: #CF3230; }
   .box3 { background:  #484848; }
@@ -33,7 +36,7 @@
   .box6 { background: #393D95; }
   .box7 { background:#3BADC9; }
   .box8 { background: #16464E;}
-  .box9 { background: #E6C33B; }
+  .box9 { background: #E6C33B; flex-grow: 15; }
   .box10 { background: #72B188; }
 
 
