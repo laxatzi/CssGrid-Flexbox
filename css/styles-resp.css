@@ -90,6 +90,20 @@ a.nav-toggle {
 .flex-nav ul.open {
   display: flex;
 }
+.top {
+  order: 0;
+}
+.details {
+  order: 1;
+}
+.signup {
+  order: 2;
+}
 
-
+.hero {
+  order: 3;
+}
+.footer-section {
+  order: 4;
+}
 }
