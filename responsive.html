@@ -66,11 +66,23 @@
       </footer>
     </div>
   <!--scripts -->
+     <!--JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+       crossorigin="anonymous">
+    </script>
+   <!--custom scripts -->
     <script>
-        // copyright year updater
-        $('#year').text(new Date().getFullYear());</script>
+      $(document).ready(function(){
+  // copyright year updater
+           $('#year').text(new Date().getFullYear());
+  
+  //nav-toggle button-link
+           $('.nav-toggle').on('click', function(){
+             $('.flex-nav ul').toggleClass('open');
+           } )
+       });
+
+    </script>
   </body>
 </html>

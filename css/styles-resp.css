@@ -46,7 +46,9 @@ body {
 .flex-nav a:hover {
   background: rgba(0, 0, 0, .3);
 }
-
+a.nav-toggle {
+  display: none;
+}
 
 @media(max-width: 835px) {
 
@@ -69,5 +71,25 @@ body {
 .flex-nav  a {
   letter-spacing: 0;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.flex-nav {
+  order: -1;
+ 
+}
+a.nav-toggle {
+  display: block;
+}
+.flex-nav ul {
+  display: none;
+}
+
+.flex-nav ul.open {
+  display: flex;
+}
+
 
 }
