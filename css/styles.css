@@ -1,14 +1,48 @@
-  * {
+  html {
     box-sizing: border-box;
   }
 
-  html,
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
   body {
-  font-size: 18px;
+    font-size: 1.25rem;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, blue, purple);
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
   }
-
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .flex-nav {
+    
+  }
+  .wrapper a {
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;  
+    text-align: center;
+    width: 100%;
+    transition: all .5s;
+    padding: 20px 5px;
+    background: rgba(0,0,0, .2);
+  }
+  .wrapper a:hover {
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .wrapper li {
+    list-style: none;
+  }
   .container {
     display: flex;
     border: 10px solid fuchsia;
