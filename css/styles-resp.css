@@ -5,6 +5,7 @@ html {
 *, *:before, *:after {
  box-sizing: inherit;
 }
+
 body {
   font-size: 1.25rem;
   margin: 0;
@@ -17,6 +18,7 @@ body {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 15px;
 }
 .flex-nav ul {
   border: 1px solid #000;
@@ -49,11 +51,30 @@ body {
 a.nav-toggle {
   display: none;
 }
+.copy {
+  font-size: .85rem;
+}
+@media(max-width: 776px) {
+  body {
+    font-size: 90%;
+  }
 
-@media(max-width: 835px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* flex-nav */
+
+  .flex-nav {
+    order: -1;
+   }
 
   .flex-nav ul {
     flex-wrap: wrap;
+  }
+  .flex-nav ul {
+    display: none;
   }
   .flex-nav li {
     flex-basis: 100%;
@@ -61,35 +82,20 @@ a.nav-toggle {
   .flex-nav .social {
     flex-basis: 10%;
   }
-
-}
-
-
-@media(max-width: 500px) {
-
-
+ 
 .flex-nav  a {
   letter-spacing: 0;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.flex-nav {
-  order: -1;
- 
-}
-a.nav-toggle {
-  display: block;
-}
-.flex-nav ul {
-  display: none;
 }
 
 .flex-nav ul.open {
   display: flex;
 }
+
+a.nav-toggle {
+  display: block;
+}
+
+/*ordering */
 .top {
   order: 0;
 }
@@ -106,4 +112,5 @@ a.nav-toggle {
 .footer-section {
   order: 4;
 }
+
 }
