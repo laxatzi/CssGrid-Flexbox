@@ -25,6 +25,12 @@
     padding: 0;
     display: flex;
   }
+  .flex-nav li {
+    flex: 3;
+  }
+  .flex-nav .social {
+    flex: 1;
+  }
   .flex-nav a {
     color: #fff;
     font-weight: 100;
@@ -36,7 +42,6 @@
     transition: all .5s;
     padding: 20px 5px;
     background: rgba(0,0,0, .2);
-    border: 1px solid yellow;
   }
   .flex-nav a:hover {
     background: rgba(0, 0, 0, .3);
