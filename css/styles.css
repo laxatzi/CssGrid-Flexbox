@@ -8,6 +8,7 @@
   body {
     font-size: 1.25rem;
     margin: 0;
+    padding: 0;
     min-height: 100vh;
     background-image: linear-gradient(256deg, blue, purple);
     color: #fff;
@@ -16,7 +17,6 @@
   .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px;
   }
   .flex-nav ul {
     border: 1px solid #000;
