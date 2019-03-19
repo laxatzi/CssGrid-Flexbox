@@ -22,7 +22,10 @@ body {
   margin: 0 auto;
   padding: 15px;
 }
-.top a {
+header img{
+  width: 100%;
+}
+.tagline a {
   color: #fff;
   text-decoration: none;
 }
@@ -48,7 +51,7 @@ body {
   text-align: center;
   width: 100%;
   transition: all .5s;
-  padding: 20px 5px;
+  padding: 20px 10px;
   background: rgba(0,0,0, .2);
 }
 .flex-nav a:hover {
@@ -102,7 +105,7 @@ a.nav-toggle {
 }
 
 /*ordering */
-.top {
+.tagline {
   order: 0;
 }
 .details {
