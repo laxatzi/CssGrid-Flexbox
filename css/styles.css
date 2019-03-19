@@ -46,7 +46,7 @@
   .flex-nav a:hover {
     background: rgba(0, 0, 0, .3);
   }
-/*
+
   .container {
     display: flex;
     border: 10px solid fuchsia;
@@ -78,27 +78,3 @@
   .box10 { background: #72B188; }
 
 
-*/
-@media(max-width: 835px) {
-
-    .flex-nav ul {
-      flex-wrap: wrap;
-    }
-    .flex-nav li {
-      flex-basis: 100%;
-    }
-    .flex-nav .social {
-      flex-basis: 10%;
-    }
-
-}
-
-
-@media(max-width: 500px) {
-
-  
-  .flex-nav  a {
-    letter-spacing: 0;
-  }
-
-}
