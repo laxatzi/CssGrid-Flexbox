@@ -2,8 +2,10 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
- box-sizing: inherit;
+*,
+*:before,
+*:after {
+     box-sizing: inherit;
 }
 
 body {
@@ -19,6 +21,10 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
+}
+.top a {
+  color: #fff;
+  text-decoration: none;
 }
 .flex-nav ul {
   border: 1px solid #000;
