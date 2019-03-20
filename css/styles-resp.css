@@ -41,7 +41,7 @@ header img{
   display: flex;
   flex: 3;
 }
-
+.flex-nav ul.brandname { flex: 1;}
 .flex-nav ul.social {
   flex: 1; 
   border: 1px solid yellow; 
@@ -74,7 +74,9 @@ a.nav-toggle {
 .copy {
   font-size: .85rem;
 }
-@media(max-width: 776px) {
+.mobile-image img {display: none; width: 100%; }
+
+@media(max-width: 768px) {
  
 
   .wrapper {
@@ -114,21 +116,27 @@ a.nav-toggle {
   order: 0;
 }
 .details {
-  order: 1;
-}
-.signup {
   order: 2;
 }
-
+.signup {
+  order: 1;
+}
+.mobile-image {
+   order: 3;
+}
 .footer-section {
   order: 4;
 }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
 
   .tagline {display: none; }
+
   body {
     font-size: 90%;
   }
+
+  .hero img {display: none; }
+  .mobile-image img{display: block;}
 }
