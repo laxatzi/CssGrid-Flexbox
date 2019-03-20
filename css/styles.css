@@ -77,6 +77,7 @@
   border: 20px solid rgba(0, 0, 0, .3 );
 }
 .flex-form label { color: rgba(0, 0, 0, .3); }
+
 input[type="search"] {
   flex-basis: 30%;
 }
@@ -88,4 +89,20 @@ input[type="search"] {
   min-width: 100%; 
   min-height: 100%;
   z-index: -1;
+}
+
+/*Media Queries */
+@media screen and (max-width: 899px) {
+  
+  .flex-form {
+     flex-direction: column;
+     flex-basis: 60%;
+     font-size: 90%;
+  }
+  .flex-form >* {
+    line-height: 25px;
+  }
+  .flex-form input[type="submit"] {
+    flex-basis: 50%;
+  }
 }
