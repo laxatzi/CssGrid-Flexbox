@@ -78,15 +78,16 @@ a.nav-toggle {
 
 .signup {
   background: rgba(0, 0,0, .2);
+  display: flex;
 }
 .signup input {
       background-color: transparent;
       color: #fff;
-      line-height: 2.5;
       border-radius: 10px;
       border: 2px solid rgba(0,0,0,.5);
       padding: 10px;
       font-size: 1rem;
+      margin-right: 10px;
     }
 .signup .submit-button {
   border: 2px solid  rgba(255, 255, 255, .5);
@@ -94,7 +95,8 @@ a.nav-toggle {
   background-color: rgba(0, 0,0, .2);
   padding: 10px;
   color: #fff;
-  font-size: .85rem;
+  max-width: 200px;
+  font-size: 80%;
 }
 .signup .submit-button:hover {
   background-color: rgba(255, 255, 255, .5);
@@ -154,17 +156,17 @@ a.nav-toggle {
 .footer-section {
   order: 4;
 }
+
+.signup {
+  flex-direction: column;
+}
 .signup input {
-  line-height: 1.75;
   margin-top: 10px;
  }
 .signup .submit-button {
-border: 2px solid  rgba(255, 255, 255, .5);
-border-radius: 10px;
-background-color: rgba(0, 0,0, .2);
-padding: 10px;
-color: #fff;
-font-size: .85rem;
+   margin: 10px auto;
+   text-align: center;
+   width: 50%;
 }
 }
 @media screen and (max-width: 576px) {
