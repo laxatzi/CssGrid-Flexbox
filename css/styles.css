@@ -75,6 +75,7 @@
   display: flex;
   border-radius: 5px;
   border: 20px solid rgba(0, 0, 0, .3 );
+  background-color: #fff;
 }
 .flex-form label { color: rgba(0, 0, 0, .3); }
 
@@ -97,12 +98,16 @@ input[type="search"] {
   .flex-form {
      flex-direction: column;
      flex-basis: 60%;
-     font-size: 90%;
+     font-size: 85%;
   }
   .flex-form >* {
     line-height: 25px;
   }
   .flex-form input[type="submit"] {
-    flex-basis: 50%;
+    width: 50%;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
