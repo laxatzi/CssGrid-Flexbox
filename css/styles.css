@@ -46,7 +46,6 @@
 
 
 /*Formpage */
-.flex-form { border: 1px solid red;  }
 .flex-form > * {
   padding: 10px;
   border: 0;
@@ -75,16 +74,13 @@
 .flex-form {
   display: flex;
   border-radius: 5px;
-  border: 20px solid rgba(0, 0, 0, .3);
+  border: 20px solid rgba(0, 0, 0, .3 );
 }
 .flex-form label { color: rgba(0, 0, 0, .3); }
 input[type="search"] {
   flex-basis: 30%;
 }
-
-
-
-    
+/* video  */    
 #puppy-video {
   position: fixed;
   right: 0;
