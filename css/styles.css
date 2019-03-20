@@ -46,6 +46,7 @@
 
 
 /*Formpage */
+.flex-form { border: 1px solid red;  }
 .flex-form > * {
   padding: 10px;
   border: 0;
@@ -59,4 +60,18 @@
 
 .flex-form > *:last-child {
   border-right: 0;
+}
+.flex-form input[type="submit"] {
+  background-color:rgb(214, 33, 57);
+  color: #fff;
+}
+/* flexbox properties */
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+}
+.flex-form {
+  display: flex;
 }
