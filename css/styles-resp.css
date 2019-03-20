@@ -29,17 +29,28 @@ header img{
   color: #fff;
   text-decoration: none;
 }
+.flex-nav {
+   display: flex;
+   border: 1px solid #000;
+   }
+
 .flex-nav ul {
-  border: 1px solid #000;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex: 3;
 }
-.flex-nav li {
+
+.flex-nav ul.social {
+  flex: 1; 
+  border: 1px solid yellow; 
+}
+
+.flex-nav  li {
   flex: 1  1 100%;
 }
-.flex-nav li.social {
+.flex-nav  li.social-item {
   flex: 1 3 100%;
 }
 .flex-nav a {
@@ -72,21 +83,17 @@ a.nav-toggle {
   }
 
   /* flex-nav */
-
-  .flex-nav {
-    order: -1;
-   }
+ .flex-nav { flex-direction: column; }
 
   .flex-nav ul {
     flex-wrap: wrap;
-  }
-  .flex-nav ul {
     display: none;
   }
+
   .flex-nav li {
     flex-basis: 100%;
   }
-  .flex-nav .social {
+  .flex-nav .socia-item {
     flex-basis: 10%;
   }
  
