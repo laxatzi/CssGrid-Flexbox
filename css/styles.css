@@ -74,4 +74,6 @@
 }
 .flex-form {
   display: flex;
+  border-radius: 5px;
+  border: 20px solid rgba(0, 0, 0, .3);
 }
