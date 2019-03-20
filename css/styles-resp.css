@@ -32,7 +32,6 @@ header img{
 }
 .flex-nav {
    display: flex;
-   border: 1px solid #000;
    }
 
 .flex-nav ul {
@@ -102,7 +101,6 @@ a.nav-toggle {
   font-weight: bold;
   color:rgba(0, 0,0, .8);
   border: none;
-
 }
 
 @media(max-width: 768px) {
@@ -156,7 +154,18 @@ a.nav-toggle {
 .footer-section {
   order: 4;
 }
-
+.signup input {
+  line-height: 1.75;
+  margin-top: 10px;
+ }
+.signup .submit-button {
+border: 2px solid  rgba(255, 255, 255, .5);
+border-radius: 10px;
+background-color: rgba(0, 0,0, .2);
+padding: 10px;
+color: #fff;
+font-size: .85rem;
+}
 }
 @media screen and (max-width: 576px) {
 
