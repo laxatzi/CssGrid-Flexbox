@@ -39,6 +39,16 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
+
+    .slider-nav ul li {
+      flex: 1;
+      border: 1px solid red;
+    }
+
+       .slider-nav  a {
+         display: block;
+       }
 
 
