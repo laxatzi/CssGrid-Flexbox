@@ -45,6 +45,7 @@ a:hover {
     .slider-nav ul li {
       flex: 3;
       border: 1px solid red;
+      text-align: center;
     }
    .slider-nav .arrow {
      flex:1;
