@@ -42,16 +42,19 @@ a:hover {
   display: flex;
 }
 
-    .slider-nav ul li {
+    .slider-nav  li {
       flex: 3;
-      border: 1px solid red;
       text-align: center;
+      display: flex;
     }
    .slider-nav .arrow {
      flex:1;
    }
        .slider-nav  a {
-         display: block;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
        }
 
 
