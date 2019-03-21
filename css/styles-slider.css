@@ -43,10 +43,12 @@ a:hover {
 }
 
     .slider-nav ul li {
-      flex: 1;
+      flex: 3;
       border: 1px solid red;
     }
-
+   .slider-nav .arrow {
+     flex:1;
+   }
        .slider-nav  a {
          display: block;
        }
