@@ -57,4 +57,20 @@ a:hover {
         align-items: center;
        }
 
+/* Media max 576px */
+@media screen and (max-width: 576px) {
 
+ body {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    padding: 1.2rem;
+  }
+
+  a {
+    font-size: .85rem;
+    padding: 10px 3px;
+  }
+
+}
