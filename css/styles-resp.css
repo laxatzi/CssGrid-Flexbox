@@ -46,12 +46,6 @@ header img{
   flex: 1; 
 }
 
-.flex-nav  li {
-  flex: 1  1 100%;
-}
-.flex-nav  li.social-item {
-  flex: 1 3 100%;
-}
 .flex-nav a {
   color: #fff;
   font-weight: 100;
@@ -73,7 +67,10 @@ a.nav-toggle {
 .copy {
   font-size: .85rem;
 }
-.mobile-image img {display: none; width: 100%; }
+.mobile-image img {
+  display: none;
+   width: 100%; 
+  }
 
 .signup {
   background: rgba(0, 0,0, .2);
@@ -106,9 +103,9 @@ a.nav-toggle {
 .social-item i {
   font-size: 135%;
 }
+/*MEDIA 768px */
 @media(max-width: 768px) {
  
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -158,6 +155,7 @@ a.nav-toggle {
 }
 .signup {
   order: 1;
+  flex-direction: column;  /* responsive form */
 }
 .mobile-image {
    order: 3;
@@ -166,9 +164,6 @@ a.nav-toggle {
   order: 4;
 }
 
-.signup {
-  flex-direction: column;
-}
 .signup input {
   margin-top: 10px;
  }
