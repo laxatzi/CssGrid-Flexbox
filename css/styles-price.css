@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   border: 1px solid yellow;
   display: flex;
-  
+  align-items: center;
 }
 
 .plan {
@@ -34,4 +34,25 @@ body {
   flex: 1;
   flex-wrap: wrap;
 }
-.plan > * {flex:1 1 100%; }
+.plan >* {
+  flex-basis: 100%;
+}
+/* text properties */
+h3,
+h4,
+p.lead { 
+   margin: 0;
+   padding: 3px;
+   font-weight: 300;
+ }
+h3 { font-size: 150%; }
+h4 { font-size: 110%; }
+p.lead {
+     font-style: oblique;
+     background-color:yellow;
+     color:crimson;
+    }
+small {
+  margin-top: 1rem; 
+}
+
