@@ -37,6 +37,8 @@ a { color: white;}
 .item.large,
 .item.small,
 .item {
-  flex: 1 1 calc(33.33% - 20px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.33% - 20px);
+          flex: 1 1 calc(33.33% - 20px);
 
 }
