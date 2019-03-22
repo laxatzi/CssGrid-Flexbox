@@ -1,1 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+     box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(256deg, blue, purple);
+  color: #fff;
+  font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;  
+}
+a { color: white;}
 
