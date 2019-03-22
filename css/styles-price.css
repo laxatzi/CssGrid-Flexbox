@@ -51,8 +51,15 @@ p.lead {
      font-style: oblique;
      background-color:yellow;
      color:crimson;
+     margin-top: 1rem;
     }
 small {
   margin-top: 1rem; 
+}
+ul.features { border: 1px solid red;}
+.features li {
+  padding: 5px;
+  list-style: none;
+  border-bottom: 1px dotted rgba(0,0,0, .5);
 }
 
