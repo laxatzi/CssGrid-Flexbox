@@ -76,3 +76,7 @@ ul.features {
   text-align: center;
 }
 
+h4.strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
