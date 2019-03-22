@@ -94,6 +94,10 @@ a.btn {
 }
 
 /* Media @ 768px  */
-@media screen and (max-width) {
-  
+@media screen and (max-width: 768px) {
+  .pricing-wrapper {
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+  }
 }
