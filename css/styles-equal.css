@@ -13,13 +13,15 @@ body {
 }
 .wrapper {
   display: flex;
+  flex-wrap: wrap;  
 }
 a { color: white;}
-.item .large {
-  font-size: 40px;
+
+.item.large {
+  font-size: 50px;
 }
-.item .small {
-  font-size: 20xp;
+.item.small {
+  font-size: 20px;
 
 }
 .item {
