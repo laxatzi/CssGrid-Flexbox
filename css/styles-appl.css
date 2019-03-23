@@ -60,3 +60,7 @@ a.btn {
 .icon-bar a:first-child {
   border-left: 0;
 }
+.icon-bar a:first-child,
+.icon-bar a:hover {
+  border-bottom: 5px solid rgba(0,0,0,.1);
+}
