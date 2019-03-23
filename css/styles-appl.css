@@ -64,3 +64,5 @@ a.btn {
 .icon-bar a:hover {
   border-bottom: 5px solid rgba(0,0,0,.1);
 }
+
+.icon-bar { border-top: 1px solid #e6e6e6;}
