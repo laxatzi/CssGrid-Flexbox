@@ -73,5 +73,11 @@ a.btn {
   color: #fff;
   text-shadow: 3px 3px 0 rgba(0,0,0, .1);
   padding-bottom: 1rem;
-  
+
+}
+
+.app-header {
+  background-color: #f0cb45;
+  color: rgba(0,0,0. 5);
+  padding: 1rem;
 }
