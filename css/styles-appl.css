@@ -83,4 +83,10 @@ a.btn {
 }
 
 /* flexbox props start here */
-
+   .app-wrap {
+     display: flex;
+     flex-direction: column;
+   }
+   .app-wrap > * {
+     flex: 1 1 auto;
+   }
