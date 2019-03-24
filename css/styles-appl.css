@@ -16,8 +16,6 @@ body {
   font-size: 1.5rem;
 }
 .app-wrap {
-  display: flex;
-  flex-wrap: wrap;  
   max-width: 540px;
   height: 90vh;
   margin: 5vh auto;
@@ -87,6 +85,4 @@ a.btn {
      display: flex;
      flex-direction: column;
    }
-   .app-wrap > * {
-     flex: 1 1 auto;
-   }
+ 
