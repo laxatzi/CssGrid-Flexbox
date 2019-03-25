@@ -89,3 +89,7 @@ a.btn {
      flex: 1 1 auto;
    }
  
+   .content {
+     overflow-y: scroll;
+     -webkit-overflow-scrolling: touch;
+   }
