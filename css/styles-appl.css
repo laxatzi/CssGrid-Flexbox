@@ -105,3 +105,30 @@ a.btn {
     .icon-bar a {
      flex: 1;
    } 
+
+   /* add media max 486px */
+@media screen and (max-width: 486px){
+
+   body {
+    font-size: 1.25rem;
+  }
+  a.btn {
+    padding: .8rem 1.25rem;
+  }
+  .content {
+    padding: 15px;
+    line-height: 1.45;
+  }
+  .app-header {
+    padding: .85rem;
+  }
+  .icon-bar a {
+     padding: 1.25rem;
+   }
+ 
+    
+   .icon-bar i {
+     font-size: 2rem;
+     padding-bottom: .85rem;
+   }
+  }
