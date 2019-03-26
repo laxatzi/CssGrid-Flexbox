@@ -40,20 +40,22 @@ header img {
 .tagline,
 .flex-nav,
 .hero {
-  border: 1px solid red;
 }
-.tagline {
-  padding: .5rem 1rem;
-}
+
 
 .flex-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
 }
+
 .flex-nav ul {
   display: flex;
+  flex: 3;
+  justify-content: flex-end;
 }
+.flex-nav ul.empty { flex: 1; }
+
 .flex-nav li {
-  padding: 5px 10px;
+  padding: 8px;
 }
+
