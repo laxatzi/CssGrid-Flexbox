@@ -32,3 +32,28 @@ a:visited {
   color: #fff;
   text-decoration: none;
 }
+
+header img {
+  width: 100%;
+}
+
+.tagline,
+.flex-nav,
+.hero {
+  border: 1px solid red;
+}
+.tagline {
+  padding: .5rem 1rem;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.flex-nav ul {
+  display: flex;
+}
+.flex-nav li {
+  padding: 5px 10px;
+}
