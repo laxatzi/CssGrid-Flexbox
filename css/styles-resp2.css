@@ -89,3 +89,24 @@ a.nav-toggle  {
 .mobile-image img{
   display: none;
 }
+
+.form {
+  background-color: inherit;
+}
+.form input {
+  line-height: 1.46;
+  background-color: inherit;
+  padding: 10px 20px;
+  border: 2px solid rgba(0,0,0, .5);
+  border-radius: 20px;
+  font-size: 90%;
+  color: #fff; 
+}
+a.submit-btn {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid rgba(0,0,0, .5);
+  border-radius: 20px;  
+  font-size: 90%;
+  padding: 10px 20px; 
+}
