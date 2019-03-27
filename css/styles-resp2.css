@@ -135,11 +135,18 @@ p.copy {
     flex-direction: column;
     justify-content: center;
   }
-  .flex-nav ul li {
+  .flex-nav  li {
     flex-basis: 100%;
   }
-  .flex-nav 
-
+ .flex-nav ul.social {
+   flex-direction: row;
+   justify-content: center; 
+   flex-wrap: wrap;
+ 
+ }
+ .flex-nav .social li {
+  flex-basis: 15%;
+ }
 }
 
 /* Max-Width 576px  */
