@@ -43,13 +43,19 @@ li {
 .flex-nav a:focus {
   background-color:rgba(0,0,0, .2);
 }
+h1 { 
+  padding: 0;
+  margin: 0;
+}
 h1 a { 
   margin: 0;
   padding: 0;
   color: #fff;
   text-decoration: none;
 }
-
+h1 a:hover {
+  background-color: rgba(0,0,0, .2);
+}
 img {
   width: 100%;
 }
@@ -58,6 +64,7 @@ nav.flex-nav {
   display: flex;
   margin: 0;
   padding: 0;
+  border: 1px solid yellow;
 }
 
 .flex-nav ul {
