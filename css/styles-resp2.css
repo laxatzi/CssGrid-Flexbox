@@ -145,7 +145,7 @@ p.copy {
   }
   .flex-nav ul{
     flex-wrap: wrap;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
   }
@@ -175,6 +175,10 @@ p.copy {
 #mobile-image { order: 3; }
 #footer-section { order: 4; }
 
+/* jquery plugin class */
+ .flex-nav ul.open {
+   display: flex;
+ }
 
 }
 
