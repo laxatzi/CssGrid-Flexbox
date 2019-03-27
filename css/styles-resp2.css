@@ -160,7 +160,7 @@ p.copy {
 
 /* Max-Width 576px  */
 @media screen and (max-width: 576px) {
-
+    body { font-size: 1.65rem;  }
     #top h1 a{
        display: none;
     }
@@ -171,5 +171,12 @@ p.copy {
     .hero img {
       display: none;
     }
-    .
+    .form {
+      margin-top: 20px;
+    }
+    .form input {
+      margin: 5px 0;
+      width: 100%;
+    }
+  
 }
