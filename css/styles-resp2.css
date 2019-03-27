@@ -114,3 +114,14 @@ a.submit-btn {
 p.copy {
   font-size: 80%;
 }
+
+/* Max-Width 750px  */
+@media screen and (max-width: 750px) {
+  
+  a.nav-toggle  {
+    display: block;
+  }
+  .flex-nav ul{
+    display: none;
+  }
+}
