@@ -115,13 +115,34 @@ p.copy {
   font-size: 80%;
 }
 
-/* Max-Width 750px  */
-@media screen and (max-width: 750px) {
-  
+/* Max-Width 768px  */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+/* flex nav */
+  .flex-nav {
+    display: flex;
+    flex-direction: column; 
+  }
   a.nav-toggle  {
     display: block;
   }
   .flex-nav ul{
-    display: none;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  .flex-nav ul li {
+    flex-basis: 100%;
+  }
+  .flex-nav 
+
+}
+
+/* Max-Width 576px  */
+@media screen and (max-width: 576px) {
+
 }
