@@ -96,7 +96,7 @@ a.nav-toggle  {
 .form input {
   line-height: 1.46;
   background-color: inherit;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: 2px solid rgba(0,0,0, .5);
   border-radius: 15px;
   font-size: 90%;
@@ -108,7 +108,7 @@ a.submit-btn {
   border: 2px solid rgba(0,0,0, .5);
   border-radius: 15px;  
   font-size: 90%;
-  padding: 10px 20px; 
+  padding: 5px 20px; 
 }
 
 p.copy {
