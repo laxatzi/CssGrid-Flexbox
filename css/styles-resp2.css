@@ -149,6 +149,15 @@ p.copy {
  }
 }
 
+/* Ordering  */
+#top {order: 0; }
+#form { order: 1; }
+#main { order: 2; }
+#mobile-image { order: 3; }
+#footer-section { order: 4; }
+
+
+
 /* Max-Width 576px  */
 @media screen and (max-width: 576px) {
 
