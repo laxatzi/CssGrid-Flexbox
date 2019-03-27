@@ -161,4 +161,15 @@ p.copy {
 /* Max-Width 576px  */
 @media screen and (max-width: 576px) {
 
+    #top h1 a{
+       display: none;
+    }
+    .mobile-image img {
+      display: block;
+    }
+
+    .hero img {
+      display: none;
+    }
+    .
 }
