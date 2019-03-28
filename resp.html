@@ -18,49 +18,7 @@
   </head>
   <body>
     <div class="wrapper">
-  <!-- Header section -->
-    <header id="top">
-       <!-- tagline -->
-         <h1><a href="#">What the flexbox?</a></h1>
-    
-       <!-- navigation -->
-       <nav class="flex-nav">
-        <a href="#" class="nav-toggle"><i class="fas fa-bars fa-3x"></i> </a>
-          <ul>
-             <li><a href="#">Item 01</a></li>
-             <li><a href="#">Item 02</a></li>
-             <li><a href="#">Item 03</a></li>
-             <li><a href="#">Item 04</a></li>
-          </ul>
-          <ul class="empty"></ul>
-          <ul class="social">
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-       </nav>
-       <!-- hero section -->
-       <section class="hero" id="hero">
-         <img src="http://lorempixel.com/1000/600"  alt="">
-       </section>
-    </header>
-<!-- End of header -->
-    <!-- main section -->
-      <div class="main" id="main">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis exercitationem facere obcaecati maxime iusto?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe tenetur vero!</p>
-      </div>
-    <!-- contact form -->
-      <div class="form" id="form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <input href="#" type="submit" class="submit-btn" value="Sign Me Up!"></input>
-      </div>
-    <!-- mobile image -->
-      <section class="mobile-image" id="mobile-image">
-          <img src="http://lorempixel.com/500/300"  alt="">
-      </section>
+
 
     <!-- footer -->
       <footer class="footer-section" id="footer-section">
@@ -79,12 +37,8 @@
 // copyright year updater
          $('#year').text(new Date().getFullYear());
 
-//nav-toggle button-link
-         $('.nav-toggle').on('click', function(){
-           $('.flex-nav ul').toggleClass('open');
-         } )
-         
-     });
+
+        });
 
   </script>
 </body>
