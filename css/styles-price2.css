@@ -27,7 +27,6 @@ body {
 }
 
 .plan {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   text-align: center; 
@@ -37,6 +36,8 @@ body {
   background-color: #5F32D2;
   font-size: 80%;
   line-height: 1.45;
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 h1,
 h2,
@@ -68,4 +69,7 @@ h6 {
   padding-top: 5px;
   padding-bottom: 5px; 
   border-bottom: 1px dotted rgb(34, 32, 32);  
+}
+.plan li:last-child {
+  border-bottom: none;
 }
