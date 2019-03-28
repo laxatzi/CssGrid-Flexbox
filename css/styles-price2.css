@@ -20,7 +20,39 @@ body {
 /* add flex properties to .pricing-wrapper */
 .pricing-wrapper {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid yellow;
+  display: flex;  
+  align-items: center;  
 }
 
+.plan {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #5F32D2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.plan a {
+  color: rgb(34, 32, 32);  
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: yellow;
+  width: 50%;
+  margin: 0 auto; 
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+}
