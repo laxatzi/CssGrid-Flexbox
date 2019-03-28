@@ -38,7 +38,8 @@ body {
       list-style: none; 
       border: 1px solid red;
       display: flex;
-      flex: 2;    
+      flex: 2;   
+      padding: 10px; 
     }
 .slider-nav a {
   text-decoration: none;
