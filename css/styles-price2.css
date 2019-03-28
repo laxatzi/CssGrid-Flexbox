@@ -21,7 +21,6 @@ body {
 .pricing-wrapper {
   max-width: 800px;
   margin: 10px auto;
-  border: 1px solid yellow;
   display: flex;  
   align-items: center;  
 }
@@ -62,7 +61,7 @@ h4.obsolete {
 p.lead {
   font-style: oblique;
   color: crimson;
-  background-color: rgb(246, 246, 54);
+  background-color: rgb(228, 228, 37);
   font-weight: 700;
 }
 .plan h3 {
@@ -72,12 +71,12 @@ p.lead {
   color: rgb(34, 32, 32);  
   text-decoration: none;
   padding: 10px 20px;
-  background-color: rgb(246, 246, 54);
+  background-color: rgb(228, 228, 37);
   width: 50%;
   margin: 0 auto; 
   border: 1px solid transparent;
   border-radius: 5px;
-  font-size: 100%
+  font-size: 100%;
 }
 
 .plan ul {
@@ -91,4 +90,15 @@ p.lead {
 }
 .plan li:last-child {
   border-bottom: none;
+}
+
+/* Media max 768px; */
+@media screen and (max-width: 768px) {
+  .pricing-wrapper {
+    flex-direction: column;
+  }
+  .plan {
+    max-width: 400px;
+    padding: 8%;
+  }
 }
