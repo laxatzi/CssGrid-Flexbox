@@ -42,13 +42,22 @@ body {
       padding: 10px; 
      
     }
-.slider-nav .arrow {flex: 1; }
+.slider-nav .arrow { flex: 1; }
+
 .slider-nav a {
   text-decoration: none;
   color: #fff;
   font-size: 70%;
   display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-basis: 100%; 
 }
 .slider-nav a:hover {
   background-color: rgba(0,0,0, .2);
+}
+
+.slider-nav span {
+  display: flex;
+  
 }
