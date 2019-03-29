@@ -66,10 +66,14 @@ i a {
 .app-body {
   padding: 10px;
   background-color: #fff;
-  display: flex;  
-  flex-wrap: wrap;
   box-shadow: inset 0 5px 0 rgba(0,0,0, .1);
-
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.app-body img {
+  max-width: 80%;
+  float: left;
+  margin-right: 10px;
 }
 .app-footer {
   background-color: #F0CB45;
