@@ -47,10 +47,10 @@
 
 /*Formpage */
 .flex-form > * {
-  padding: 10px;
+  padding: 5px;
   border: 0;
   line-height: 50px;
-  font-size: 100%;  
+  font-size: 90%;  
   outline: 0;
   border-radius: 0;
   border-right:  1px solid rgba(0, 0, 0, .3);
@@ -77,6 +77,7 @@
   border-radius: 5px;
   border: 20px solid rgba(0, 0, 0, .4);
   background-color: rgba(250, 250, 250, .5);
+  flex-basis: 62%;  
 }
 .flex-form input,
 .flex-form label,
@@ -86,7 +87,7 @@
   }
 
 input[type="search"] {
-  flex-basis: 30%;
+  flex-basis: 33%;
 }
 /* video  */    
 #puppy-video {
