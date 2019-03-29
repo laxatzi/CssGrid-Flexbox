@@ -68,3 +68,22 @@ i a {
   flex-wrap: wrap;  
   flex-direction: column;
 }
+.app-footer {
+  background-color: #F0CB45;
+  display: flex;
+
+}
+.app-footer a {
+    flex: 1;  
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0, .1);
+}
+.app-footer i {
+  font-size: 150%;
+  padding: 10px 5px;
+  text-shadow: 3px 3px 2px rgba(0,0,0, .3);
+}
