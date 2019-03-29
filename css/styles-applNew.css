@@ -33,7 +33,7 @@ i a {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 550px;
   height: 90vh;
   margin: 5vh auto;
   padding: 0;
@@ -58,7 +58,13 @@ i a {
   font-size: 120%;
  
 }
-
+.app-header a:hover {
+  background-color: rgba(0,0,0, .3);
+}
 .app-body {
   padding: 10px;
+  background-color: #fff;
+  display: flex;  
+  flex-wrap: wrap;  
+  flex-direction: column;
 }
