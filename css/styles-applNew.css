@@ -37,11 +37,13 @@ i a {
   height: 90vh;
   margin: 5vh auto;
   padding: 0;
+  box-shadow: 0 0 50px rgba(0,0,0, .3);
 
 }
 .app-container a {
   color: #fff;
   text-decoration: none;
+  
 }
 .app-header {
   background-color: #F0CB45;
@@ -65,8 +67,7 @@ i a {
   padding: 10px;
   background-color: #fff;
   display: flex;  
-  flex-wrap: wrap;  
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .app-footer {
   background-color: #F0CB45;
