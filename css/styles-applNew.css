@@ -38,7 +38,9 @@ i a {
   margin: 5vh auto;
   padding: 0;
   box-shadow: 0 0 50px rgba(0,0,0, .3);
-
+}
+.app-container > *{
+    flex: 1 1 auto;
 }
 .app-container a {
   color: #fff;
@@ -58,8 +60,7 @@ i a {
   padding: 10px;
   border-radius: 5px;
   font-size: 120%;
- 
-}
+ }
 .app-header a:hover {
   background-color: rgba(0,0,0, .3);
 }
@@ -100,4 +101,24 @@ i a {
 }
 .app-footer span {
   color: rgba(0,0,0, .4);
+}
+
+/* media at max 500px */
+@media screen and (max-width: 500px) {
+   
+  .app-header h1 { font-size: 1rem; }
+.app-header a {
+    padding: 5px;
+   }
+ .app-body img {
+  margin-right: 5px;
+}
+.app-footer a {
+  padding: 5px;
+}
+.app-footer i {
+  font-size: 130%;
+  padding: 5px;
+ 
+}
 }
