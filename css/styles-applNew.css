@@ -53,8 +53,12 @@ i a {
 .app-header a {
   background-color: rgba(0,0,0, .1);
   border: 1px solid transparent;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
-  font-size: 150%;
+  font-size: 120%;
  
+}
+
+.app-body {
+  padding: 10px;
 }
