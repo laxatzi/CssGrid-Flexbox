@@ -25,8 +25,9 @@ html {
   text-align: center;
   display: grid;
   grid-gap: 10px;
+  grid-template-columns: 200px 500px;
+  grid-template-rows: 50px 100px;
 }
-
    .item {
      background-color: var(--yellow);
      padding: 10px 0;
