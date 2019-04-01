@@ -25,9 +25,7 @@ html {
   text-align: center;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 400px 200px;
-  grid-auto-flow: column;
-  grid-auto-columns: 100px;
+
 }
    .item {
      background-color: var(--yellow);
