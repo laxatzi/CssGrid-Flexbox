@@ -27,6 +27,7 @@ html {
   margin: 20px;
   border: 10px solid var(--yellow);
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
    .item {
      background-color: var(--yellow);
@@ -34,6 +35,7 @@ html {
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
 .item9 {
-  grid-column: 1/ -1;
+  grid-column: 1/ span 2;
+  grid-row: 1 / span 4;
   background-color: rgb(36, 230, 69);
 }
