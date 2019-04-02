@@ -33,9 +33,3 @@ html {
      padding: 10px 0;
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
-
-    .item9 {
-      background-color: mistyrose;
-      grid-column: span 2;
-      grid-row: span 2;
-    }
