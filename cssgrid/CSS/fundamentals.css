@@ -34,6 +34,6 @@ html {
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
 .item9 {
-  grid-column: 3/5;
+  grid-column: 3/ span 2;
   background-color: rgb(36, 230, 69);
 }
