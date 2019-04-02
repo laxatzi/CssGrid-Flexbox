@@ -32,3 +32,5 @@ html {
      padding: 10px 0;
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
+
+  /* Make the grid 10 cols wide, every other taking up twice the free space */
