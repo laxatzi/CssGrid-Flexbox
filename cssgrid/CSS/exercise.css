@@ -1,1 +1,24 @@
 
+.container {
+  margin: 10px auto;
+  font-size: 2.5rem;
+  text-align: center;
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px;
+  border: 10px solid var(--yellow);
+}
+   .item {
+     background-color: var(--yellow);
+     padding: 10px 0;
+     border-bottom:5px solid  rgba(0, 0, 0, .07);
+    }
+
+    /* Make the grid 10 cols wide, every other taking up twice the free space */
+    /* Make the grid have 10 explicit rows, 50px high each */
+    /* With item1, start at col 3 and go until 5 */
+    /* With item 2, start at col 5 and go til the end */
+    /* Make item 5 double span 2 cols and rows */
+    /* Make item 8 two rows high */
+    /* Make item 15 span the entire grid width */
+    
