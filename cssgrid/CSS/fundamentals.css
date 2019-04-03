@@ -58,3 +58,7 @@ html {
     .item15 {
       grid-column: 1/-1;
     }
+    /* Make item 18 span 4 widths, but end 9 */
+    .item18 {
+      grid-column: 4/9;
+    }
