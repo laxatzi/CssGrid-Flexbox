@@ -26,8 +26,6 @@ html {
   grid-gap: 20px;
   margin: 20px;
   border: 10px solid var(--yellow);
-  grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
-
 }
    .item {
      background-color: var(--yellow);
