@@ -49,4 +49,9 @@ html {
       grid-row: span 2;
     }
 
-    
+        /* Make item 8 two rows high */
+    .item8 {
+      grid-row: span 2; 
+
+    }
+
