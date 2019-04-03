@@ -14,7 +14,7 @@
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
 
-    /* Make the grid 10 cols wide, every other taking up twice the free space */
+       /* Make item 20 start at row 4 and go for 3 */ /* Make the grid 10 cols wide, every other taking up twice the free space */
     /* Make the grid have 10 explicit rows, 50px high each */
     /* With item1, start at col 3 and go until 5 */
     /* With item 2, start at col 5 and go til the end */
@@ -22,4 +22,72 @@
     /* Make item 8 two rows high */
     /* Make item 15 span the entire grid width */
     /* Make item 18 span 4 widths, but end 9 */
-    /* Make item 20 start at row 4 and go for 3 */
+
+    :root {
+      --yellow: #ffc600;
+      --black: #272727;
+    }
+    
+    html {
+      box-sizing: border-box;
+      font-size: 10px;
+      font-weight: 900;
+      color: var(--black);
+      text-shadow: 0 2px 0 rgba(0,0,0, .07);
+      background-image: linear-gradient(260deg,  blue, purple);
+    }
+    
+    *,
+    *:after,
+    *:before {
+      box-sizing: inherit;
+    }
+    
+    .container {
+      margin: 10px auto;
+      font-size: 2.5rem;
+      text-align: center;
+      display: grid;
+      grid-gap: 20px;
+      margin: 20px;
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(5, 1fr 2fr);
+      grid-template-rows: repeat(10, 50px);
+    }
+       .item {
+         background-color: var(--yellow);
+         padding: 10px 0;
+         border-bottom:5px solid  rgba(0, 0, 0, .07);
+        }
+    
+        /* With item1, start at col 3 and go until 5 */
+       .item1   {
+         grid-column: 3/5;
+       }
+           /* With item 2, start at col 5 and go til the end */
+       .item2   {
+         grid-column: 5/ -1;
+       }
+           /* Make item 5 double span 2 cols and rows */
+        .item5 {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+    
+            /* Make item 8 two rows high */
+        .item8 {
+          grid-row: span 2; 
+    
+        }
+        /* Make item 15 span the entire grid width */
+        .item15 {
+          grid-column: 1/-1;
+        }
+        /* Make item 18 span 4 widths, but end 9 */
+        .item18 {
+          grid-column: 4/9;
+        }
+            /* Make item 20 start at row 4 and go for 3 */
+          .item20 {
+            grid-row: 4/ span 3;
+          }
