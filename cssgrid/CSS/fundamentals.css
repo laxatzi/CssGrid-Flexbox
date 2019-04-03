@@ -35,4 +35,7 @@ html {
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
 
-    /* Make the grid have 10 explicit rows, 50px high each */
+    /* With item1, start at col 3 and go until 5 */
+   .item1   {
+     grid-column: 3/5;
+   }
