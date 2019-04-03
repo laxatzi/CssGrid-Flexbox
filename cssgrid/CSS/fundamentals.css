@@ -54,4 +54,7 @@ html {
       grid-row: span 2; 
 
     }
-
+    /* Make item 15 span the entire grid width */
+    .item15 {
+      grid-column: 1/-1;
+    }
