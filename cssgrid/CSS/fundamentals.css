@@ -59,12 +59,13 @@ html {
       grid-gap: 20px;
       text-align: center;
       font-size: 2rem;
-      grid-template-columns: 1fr 500px 1fr;
+      grid-template-columns: [left-edge]1fr  [content-start] 500px [content-end] 1fr [right-edge];
       grid-template-rows: repeat(10, auto);
     }
    
        .item3 {
          background-color: rgb(46, 89, 146);
+  
        }
 
     /* Media queries */
