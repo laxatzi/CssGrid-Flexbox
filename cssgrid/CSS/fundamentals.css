@@ -24,7 +24,6 @@ html {
   text-align: center;
   display: grid;
   grid-gap: 20px;
-  margin: 20px;
   border: 10px solid var(--yellow);
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: 150px 150px 100px;
@@ -58,9 +57,15 @@ html {
     .wrapper {
       display: grid;
       grid-gap: 20px;
+      text-align: center;
+      font-size: 2rem;
       grid-template-columns: 1fr 500px 1fr;
       grid-template-rows: repeat(10, auto);
     }
+   
+       .item3 {
+         background-color: rgb(46, 89, 146);
+       }
 
     /* Media queries */
     @media screen and (max-width: 700px) {
