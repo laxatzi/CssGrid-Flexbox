@@ -19,15 +19,20 @@ html {
 }
    /* WRAPPER */
    .wrapper {
-    display: grid;
-    grid-gap: 20px;
     text-align: center;
     font-size: 2rem;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 100px);
+    border: 5px solid var(--yellow);
+    min-height: 500px;
+/* grid properties */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 150px);
     /* justify-items: center; */
     /* align-items: center; */
-    place-items: center;
+    place-items: stretch;
+    justify-content: space-around;
+    align-content: space-around;
+  
   }
 
    .item {
