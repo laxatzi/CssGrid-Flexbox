@@ -24,6 +24,7 @@ html {
     text-align: center;
     font-size: 2rem;
     grid-template-columns: repeat(10, 1fr);
+    justify-items: stretch;
   }
 
    .item {
