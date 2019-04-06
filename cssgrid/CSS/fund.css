@@ -24,7 +24,7 @@ html {
     text-align: center;
     font-size: 2rem;
     grid-template-columns: repeat(10, 1fr);
-    grid-auto-flow: dense;
+    /* grid-auto-flow: dense; */
   }
 
    .item {
@@ -39,3 +39,11 @@ html {
 
    }
    
+    .item:nth-child(8n) {
+      background-color: tomato;
+      grid-column: span 2;
+    }
+
+    .item:nth-child(8n) {
+      grid-row: span 2;
+    }
