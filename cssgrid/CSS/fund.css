@@ -32,5 +32,8 @@ html {
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
 
- 
+   .item:nth-child(6n) {
+     background-color: cornflowerblue;
+     grid-column: span 6;
+   }
    
