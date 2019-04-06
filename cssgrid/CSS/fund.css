@@ -43,6 +43,8 @@ html {
 
         align-self:
         justify-self:
-        
+
+        justify * -- is row axis (horizontal)
+        align * -- is columng axis (vertical)
     
     */
