@@ -21,18 +21,10 @@ html {
    .wrapper {
     text-align: center;
     font-size: 2rem;
-    border: 5px solid var(--yellow);
-    min-height: 500px;
+    padding: 20px;
 /* grid properties */
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(5, 150px);
-    /* justify-items: center; */
-    /* align-items: center; */
-    place-items: stretch;
-    justify-content: space-around;
-    align-content:center;
-  
   }
 
    .item {
