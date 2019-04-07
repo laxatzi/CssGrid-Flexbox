@@ -25,6 +25,7 @@ html {
 /* grid properties */
     display: grid;
     grid-gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
   }
 
    .item {
