@@ -36,3 +36,10 @@ html {
 .content {
   grid-column: 1/-1;
 }
+
+.logo {
+  grid-column: span 2;
+}
+.nav {
+  grid-column: span 8;
+}
