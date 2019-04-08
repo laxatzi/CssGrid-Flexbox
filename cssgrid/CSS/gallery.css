@@ -22,7 +22,11 @@ p {
   color: white;
   border: 0;
 }
-.gallery {}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-auto-rows: 100px;
+}
 .overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
