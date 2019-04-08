@@ -22,9 +22,7 @@
   </section>
   
    <script>
-      //  start of random
-       $(document).ready(function(){
-         
+
          const gallery = document.querySelector('.gallery');
          const overlay = document.querySelector('.overlay');
          const overlayImage = overlay.querySelector('img');
@@ -45,11 +43,10 @@
           }
 
           const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]);
-          console.log(digits);
 
-          
-          // end random
-        });
+          const html = digitst.map(generateHTML);
+
+      
    </script>
 </body>
 
