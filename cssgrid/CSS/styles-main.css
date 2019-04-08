@@ -33,16 +33,3 @@ html {
      padding: 10px 0;
      border-bottom:5px solid  rgba(0, 0, 0, .07);
     }
-.content {
-  grid-column: 1/-1;
-  order: 3;
-}
-
-.logo {
-  grid-column: span 2;
-  order: 2
-}
-.nav {
-  grid-column: span 8;
-  order: 1;
-}
