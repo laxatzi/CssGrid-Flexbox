@@ -22,18 +22,22 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 20px;
-
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: sans-serif;
 }
 .album {
   background: rgba(255, 255, 255, .3);
   box-shadow:0 0 5px rgba(0,0,0, .1);
-  padding: 20px;
+  padding: 10px;
   /* grid properties */
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-gap: 10px; 
-  align-items: center;
-  justify-content: center;
   border: 5px solid var(--yellow);
+  align-items: center;
 }
     
+  .album_artwork img {
+    width: 100%;
+  }
