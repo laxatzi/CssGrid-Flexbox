@@ -20,11 +20,26 @@
 
   <section class="gallery">
   </section>
+  
+   <script>
+       $(document).ready(function(){
+         
+         const gallery = document.querySelector('.gallery');
+         const overlay = document.querySelector('.overlay');
+         const overlayImage = overlay.querySelector('img');
+         const overlayClose = overlay.querySelector('.close');
 
-
-
-
-
+            function generateHTML([hv, vv]){
+              return `
+                  <div class="item hv${hv} vv${vv} "></div>
+                  <img source="img/${randomNumber(12)}.jpg">
+                  <div class="item__overlay">
+                      <button>View</button>
+                  </div>
+              `;
+            }
+        });
+   </script>
 </body>
 
 </html>
