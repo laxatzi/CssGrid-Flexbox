@@ -22,6 +22,7 @@
   </section>
   
    <script>
+      //  start of random
        $(document).ready(function(){
          
          const gallery = document.querySelector('.gallery');
@@ -42,6 +43,12 @@
           function randomNumber(lim) {
             return Math.floor(Math.random() * lim) +1;
           }
+
+          const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]);
+          console.log(digits);
+
+          
+          // end random
         });
    </script>
 </body>
