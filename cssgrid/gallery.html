@@ -44,7 +44,9 @@
 
           const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]);
 
-          const html = digitst.map(generateHTML);
+          const html = digits.map(generateHTML).join('');
+          console.log(html);
+          
 
       
    </script>
