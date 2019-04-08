@@ -44,6 +44,13 @@ p {
       height: 100%;
       object-fit: cover;
     }
+
+    .item__overlay {
+      background: rgba(232,234,37, .3);
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      position: relative;
+    }
     .item.v2 {
       grid-row: span 2;
     }
