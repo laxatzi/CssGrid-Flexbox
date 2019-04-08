@@ -37,6 +37,10 @@ p {
 
     }
 
+
+   .item:hover .item__overlay {
+     transform: translateY(0);
+   }
     .item img {
       grid-column: 1/-1;
       grid-row: 1/-1;
@@ -54,6 +58,7 @@ p {
       justify-content: center;
       align-items: center;
       transform: translateY(100%);
+      transition: .25s;
     }
 
     .item__overlay button {
