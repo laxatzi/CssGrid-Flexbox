@@ -53,6 +53,16 @@ p {
       display: grid;
       justify-content: center;
       align-items: center;
+      transform: translateY(100%);
+    }
+
+    .item__overlay button {
+      background: rgba(0,0,0, .3);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px;
     }
     .item.v2 {
       grid-row: span 2;
