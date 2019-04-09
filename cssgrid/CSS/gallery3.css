@@ -90,7 +90,7 @@ h1 {
     }
     .overlay-inner {
       background: white;
-      width: 700px;
+      width: 40vw;
       padding: 20px;
     }
     .overlay-inner button.close {
