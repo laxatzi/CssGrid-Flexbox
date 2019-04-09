@@ -46,15 +46,15 @@
          function handleClick(e) {
            const src = e.currentTarget.querySelector('img').src;
            overlayImage.src = src;
-          overlay.classList.add('.open');
+          overlay.classList.add('open');
           console.log(src);
          }
 
        function close() {
-           overlay.classList.remove('.open');
+           overlay.classList.remove('open');
         }
         
-          const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)].concat([[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1]]));
+          const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1]])
 
           const html = digits.map(generateHTML).join('');
           gallery.innerHTML= html;
@@ -62,6 +62,7 @@
           
           const items = document.querySelectorAll('.item'); 
           items.forEach(item => item.addEventListener('click', handleClick));
+          overlayClose.addEventListener('click', close);
 
    </script>
 </body>
