@@ -5,15 +5,15 @@ const overlayClose = overlay.querySelector('.close');
 function generateHTML([h, v]) {
   return `
     <div class="item h${h} v${v}">
-      <img src="images/${randomNumber(12)}.jpg">
+      <img src="img/${randomNumber(12)}.jpg">
       <div class="item__overlay">
         <button>View →</button>
       </div>
     </div>
   `;
 }
-function randomNumber(limit) {
-  return Math.floor(Math.random() * limit) + 1;
+function randomNumber(lim) {
+  return Math.floor(Math.random() * lim) + 1;
 }
 function handleClick(e) {
   const src = e.currentTarget.querySelector('img').src;
