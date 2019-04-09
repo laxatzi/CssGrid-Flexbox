@@ -47,7 +47,7 @@
            const src = e.currentTarget.querySelector('img').src;
            overlayImage.src = src;
           overlay.classList.add('.open');
-
+          console.log(src);
          }
 
        function close() {
@@ -58,7 +58,8 @@
 
           const html = digits.map(generateHTML).join('');
           gallery.innerHTML= html;
-
+          // console.log(html);
+          
           const items = document.querySelectorAll('.item'); 
           items.forEach(item => item.addEventListener('click', handleClick));
 
