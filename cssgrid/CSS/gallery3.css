@@ -33,7 +33,7 @@ h1 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-rows: repeat(2, 200px);
 }
   .item {
     overflow: hidden;
@@ -116,13 +116,35 @@ h1 {
         font-size: 2.3rem;
       }
       .gallery {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 250px);
+        grid-template-rows: repeat(4, 200px);
       }
 
       .overlay-inner {
         width: 60vw;
       }
 
+    }
+
+/* Media at max 500px  */
+    @media screen and (max-width: 500px) {
+     
+      body{
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .wrapper {
+        width: 96%;
+        margin: 1rem auto;
+       }
+      .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 200px);
+      }
+    
+      .overlay-inner {
+        width: 100vw;
+      }
     }
