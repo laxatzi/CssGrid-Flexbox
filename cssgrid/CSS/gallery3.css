@@ -126,17 +126,17 @@ h1 {
 
     }
 
-/* Media at max 500px  */
-    @media screen and (max-width: 500px) {
+/* Media at max 585px  */
+    @media screen and (max-width: 585px) {
      
       body{
-        padding: 20px;
+        padding: 15px;
       }
       h1 {
         font-size: 2rem;
       }
       .wrapper {
-        width: 96%;
+        width: 80%;
         margin: 1rem auto;
        }
       .gallery {
@@ -145,6 +145,19 @@ h1 {
       }
     
       .overlay-inner {
-        width: 100vw;
+        width: 80vw;
       }
     }
+  /* Media at max 350px  */
+  @media screen and (max-width: 350px) {
+
+    body{
+      padding: 5px;
+    }
+    .wrapper {
+      width: 96%;
+    }
+    .overlay-inner {
+      width: 100vw;
+    }
+  }
