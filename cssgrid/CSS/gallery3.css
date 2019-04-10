@@ -36,7 +36,8 @@ h1 {
   grid-template-rows: repeat(2, 200px);
 }
   .item {
-    overflow: hidden;
+    /* overlow set to hidden coz .item__overlay div is pushed down via tranlateY(100%) */
+    overflow: hidden;  
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
@@ -49,19 +50,18 @@ h1 {
       height: 100%;
       object-fit: cover;
     }
-
-    /* overlay styles */
+/* overlay styles */
 
     .item__overlay {
       background: rgba(232,234,37, .3);
       grid-column: 1 / -1;
       grid-row: 1 / -1;  
       position: relative;
-      display: none;
+      display: grid;
       justify-content: center;
       align-items: center;
       transform: translateY(100%);
-      transition: .25s;
+      transition: .2s;
     }
 
     .item__overlay button {
@@ -74,7 +74,6 @@ h1 {
     }
 
     .item:hover .item__overlay {
-      display: grid;
       transform: translateY(0);
     }
 
