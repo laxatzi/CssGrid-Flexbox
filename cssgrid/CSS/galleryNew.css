@@ -59,3 +59,11 @@ h1 {
     .item:hover .overlay__onHover {
         transform: translateY(0);
     }
+
+    .item .overlay__onHover button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: #fff;
+    }
