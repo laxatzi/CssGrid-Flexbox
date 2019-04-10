@@ -109,7 +109,16 @@ h1 {
     .overlay img {
       width: 100%;
     }
-    
+ /* Media max 989px     */
+ @media screen and (max-width: 989px) {
+
+    body {
+      padding: 25px;
+    }
+    .wrapper {
+      width: 90%;
+    }
+ }
 /* Media max 800px */
     @media screen and (max-width: 800px) {
       h1 {
