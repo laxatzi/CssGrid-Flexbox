@@ -48,12 +48,12 @@ h1 {
       object-fit: cover;
     }
     .item .overlay__onHover {
-      grid-column: 1/-1;
-      grid-row: 1/-1;
-      transform: translateX(-100%);
       background: rgba(232,234,37, .3);
+      transform: translateX(-100%);
       transition: .15s;
       display: grid;
+      grid-column: 1/-1;
+      grid-row: 1/-1;
       justify-content: center;
       align-items: center;
       position: relative;
