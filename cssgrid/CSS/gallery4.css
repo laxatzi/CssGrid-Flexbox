@@ -1,1 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  padding: 50px;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #F93D66, #6D47D9);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
 
