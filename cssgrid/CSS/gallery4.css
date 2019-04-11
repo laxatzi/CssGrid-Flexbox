@@ -38,14 +38,15 @@ h1 {
      display: grid;
     grid-template-columns: 1 / -1;
     grid-template-rows: 1 /-1;
-    overflow: 
+    overflow: hidden;
    }
 
       .gallery__item-overlay {
         grid-column: 1;
         grid-row: 1;
-        background-color: rgba(231, 231, 129, .2);
+        background-color: rgba(243, 243, 9, 0.3);
         transform: translateX(-100%);
+        transition: .1s;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -63,7 +64,7 @@ h1 {
       }
 
       .gallery__item-overlay button {
-        background-color: rgba(0,0,0, .2);
+        background-color: rgba(0,0,0, .3);
         padding: 10px 15px;
         border: 1px solid #fff;
         border-radius: 5px;
