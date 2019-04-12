@@ -6,23 +6,24 @@
 const galleryItem = document.querySelector('.item');
 const overlay = document.querySelector('.overlay')
 const overlayClose = overlay.querySelector('.close');
+const overlayImg = overlay.querySelector('img');
 
+function open(event) {
+  const currentImgSrc = event.currentTarget.querySelector('img').src;
+  overlayImg.src = currentImgSrc;
+  overlay.classList.add('open');
+ }
 
-function open() {
-   overlay.classList.add('open');
- 
-}
 function close() {
    overlay.classList.remove('open');
-
 }
-
-galleryItem.addEventListener('click', open);
+const items =  document.querySelectorAll('.gallery__item');
+items.forEach(item => item.addEventListener('click', open));
 overlayClose.addEventListener('click', close);
 
 
 // pseudocoding
-// instead of 20: event defined for one item we want an array of ALL item 
+// instead of 20: event defined for one item we want an array of ALL items 
 //THEN we create an event for EACH item in the array
 
 //since overlay img source is not defined we want to assign current clicked image src to overlay img src
