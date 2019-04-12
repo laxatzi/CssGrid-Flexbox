@@ -90,7 +90,7 @@ h1 {
       .overlay__inner {
         background-color: #fff;
         padding: 20px;
-        width: 40vw;  /*adjust accordingly with media queries */
+        width: 60vw;  /*adjust accordingly with media queries */
       }
       .overlay__inner button.close {
         background-color: rgba(0,0,0, .1);
@@ -122,8 +122,8 @@ h1 {
       grid-template-rows: repeat(4, 200px);
     }
 
-    .overlay-inner {
-      width: 60vw;
+    .overlay__inner {
+      width: 80vw;
     }
 
   }
@@ -143,9 +143,6 @@ h1 {
       grid-template-rows: repeat(8, 200px);
     }
   
-    .overlay-inner {
-      width: 80vw;
-    }
   }
 /* Media at max 350px  */
 @media screen and (max-width: 350px) {
@@ -154,7 +151,7 @@ h1 {
     padding: 5px;
   }
 
-  .overlay-inner {
+  .overlay__inner {
     width: 100vw;
   }
 }
