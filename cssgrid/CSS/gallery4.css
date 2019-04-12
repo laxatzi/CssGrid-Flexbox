@@ -65,9 +65,28 @@ h1 {
       border-radius: 5px;
       color: #fff;
       background-color: rgba(0,0,0, .4);
+      text-transform: uppercase;
     }
     .gallery__item:hover .gallery__item-overlay {
       transform: translateX(0);
     }
        
   /* Overlay styles      */
+   .overlay {
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: 2;
+   }
+       /* .overlay.open {
+         display: grid;
+         justify-content: center;
+         align-items: center;
+       } */
+
+      
