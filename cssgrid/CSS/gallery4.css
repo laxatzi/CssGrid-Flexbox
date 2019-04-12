@@ -89,4 +89,18 @@ h1 {
          align-items: center;
        } */
 
-      
+      .overlay__inner {
+        background-color: #fff;
+        padding: 20px;
+        width: 40vw;  /*adjust accordingly with media queries */
+      }
+      .overlay__inner button.close {
+        background-color: rgba(0,0,0, .1);
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+      }
+      .overlay__inner img {
+        width: 100%;
+      }
