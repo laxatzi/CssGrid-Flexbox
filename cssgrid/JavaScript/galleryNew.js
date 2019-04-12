@@ -16,3 +16,5 @@ function close() {
 const items = document.querySelectorAll('.item'); 
 items.forEach(item => item.addEventListener('click', handleClick));
 overlayClose.addEventListener('click', close);
+
+

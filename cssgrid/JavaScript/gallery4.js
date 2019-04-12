@@ -19,3 +19,8 @@ function close() {
 
 galleryItem.addEventListener('click', open);
 overlayClose.addEventListener('click', close);
+
+
+// pseudocoding
+// instead of 20: event defined for one item we want an array of ALL item 
+//THEN we create an event for EACH item in the array
