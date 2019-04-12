@@ -102,3 +102,59 @@ h1 {
       .overlay__inner img {
         width: 100%;
       }
+
+      
+ /* Media max 989px     */
+ @media screen and (max-width: 989px) {
+
+  body {
+    padding: 25px;
+  }
+
+}
+/* Media max 800px */
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 200px);
+    }
+
+    .overlay-inner {
+      width: 60vw;
+    }
+
+  }
+
+/* Media at max 585px  */
+  @media screen and (max-width: 585px) {
+   
+    body{
+      padding: 15px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 200px);
+    }
+  
+    .overlay-inner {
+      width: 80vw;
+    }
+  }
+/* Media at max 350px  */
+@media screen and (max-width: 350px) {
+
+  body{
+    padding: 5px;
+  }
+
+  .overlay-inner {
+    width: 100vw;
+  }
+}
