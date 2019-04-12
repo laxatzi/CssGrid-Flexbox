@@ -55,6 +55,19 @@ h1 {
        justify-content: center;
        align-items: center;
        background-color: rgb(245, 245, 45, .5);
-       transform: translateX(100%);
+       transform: translateX(-100%);
+       transition: .2s;
      }
+        
+    .gallery__item-overlay button {
+      padding: 10px 15px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      background-color: rgba(0,0,0, .4);
+    }
+    .gallery__item:hover .gallery__item-overlay {
+      transform: translateX(0);
+    }
+       
   /* Overlay styles      */
