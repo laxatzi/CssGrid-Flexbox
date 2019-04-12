@@ -73,9 +73,7 @@ h1 {
        
   /* Overlay styles      */
    .overlay {
-     display: grid;
-     justify-content: center;
-     align-items: center;
+     display: none;
      position: fixed;
      left: 0;
      right: 0;
@@ -83,11 +81,11 @@ h1 {
      bottom: 0;
      z-index: 2;
    }
-       /* .overlay.open {
+        .overlay.open {
          display: grid;
          justify-content: center;
          align-items: center;
-       } */
+       } 
 
       .overlay__inner {
         background-color: #fff;
