@@ -24,3 +24,6 @@ overlayClose.addEventListener('click', close);
 // pseudocoding
 // instead of 20: event defined for one item we want an array of ALL item 
 //THEN we create an event for EACH item in the array
+
+//since overlay img source is not defined we want to assign current clicked image src to overlay img src
+//first we store overlay img src and then we 'capture' item img source with .currentTarget js method
