@@ -8,20 +8,22 @@
   <title>Flexbox vs CSS Grid: Controls on Right!</title>
   <!-- Styles -->
     <style>
-     /* .tracks {
+     /*  GRID layout system properties  */
+     .tracks {
         width: 50%;
-        margin: 20% auto;
+        margin: 20px auto;
         }
 
       .track {
         background: white;
         padding: 10px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-   GRID properties  
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-flow: column; 
-      } */
+      } 
+
+    /* FLEXBOX layout system 
       .tracks {
         width: 50%;
         margin: 20px auto;
@@ -33,14 +35,13 @@
         display: flex;
         flex: 1;
       }
-      h2,
-      .button__section {
+
+      h2 {
            display: flex;
            flex: 1;
+           border: 1px solid red;
       }
-      .button__section {
-        justify-content:flex-end;
-      }
+     */
     </style>
 
 </head>
@@ -50,11 +51,9 @@
   <div class="tracks">
     <div class="track">
       <h2>The Future (Ft. The R.O.C.)</h2>
-      <div class="button__section">
         <button>⭐</button>
         <button>❤️</button>
         <button>❌</button>
-      </div>
     </div>
     <div class="track">
       <h2>Bounce With Me (Ft. Jermaine Dupri & Xscape)</h2>
