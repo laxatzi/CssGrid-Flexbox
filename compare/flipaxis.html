@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Flexbox vs CSS Grid: Axis Flipping!</title>
   <style>
     .flipper {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      display: flex;
+      flex-direction: row;
+     justify-content: space-around;
     }
-    .flipper.flip {
-      grid-template-columns: 1fr;
+    .item {
+      flex-basis: calc(10% - 20px);
+      margin: 10px;
     }
   </style>
 </head>
