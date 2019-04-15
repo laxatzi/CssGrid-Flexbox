@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Flexbox vs CSS Grid: Self Control!</title>
 </head>
 
@@ -24,6 +24,9 @@
       height: 200px;
       width: 200px;
       border: 10px solid var(--yellow);
+      grid-template: 1fr 1fr/ 1fr 1fr;
+      align-items: center;
+      justify-items: center;
     }
     .corner:nth-child(1),
     .corner:nth-child(2) {}
