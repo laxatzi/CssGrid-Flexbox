@@ -64,7 +64,15 @@ h6 {
   display: block;
   padding: 2px 10px;
 }
-
+.editor__input {
+  resize: none;
+  background: none;
+  border: 0;
+  color: rgb(163, 156, 156);
+  font-size: 16px;
+  line-height: 19px;  
+  padding: 5px;
+}
 
 /* PEN */
 
