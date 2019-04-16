@@ -1,3 +1,6 @@
+:root  {
+  --grey: #343436;
+}
 html {
   box-sizing: border-box;
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
@@ -25,6 +28,7 @@ h6 {
   font-weight: normal;
   margin: 0;
   font-size: 1.5em;
+  color: #fff;
 }
 
 .codepen {
@@ -33,9 +37,6 @@ h6 {
   height: 100vh;
 }
 
-.codepen > * {
-  border: 1px solid red;
-}
 
 .code {
   display: grid;
@@ -48,8 +49,13 @@ h6 {
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 10px;
+  background: #000;
+  border-bottom: 5px solid var(--grey);
+  padding: 10px;
 }
-
+.pen__author {
+  color: #fff;
+}
 .preview {
   display: grid;
 }
