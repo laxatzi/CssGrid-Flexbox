@@ -46,4 +46,6 @@ h6 {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 5px;
 }
