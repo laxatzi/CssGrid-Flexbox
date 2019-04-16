@@ -26,3 +26,13 @@ h6 {
   margin: 0;
   font-size: 1.5em;
 }
+
+.codepen {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;  
+  height: 100vh;
+}
+
+.codepen > * {
+  border: 1px solid red;
+}
