@@ -36,3 +36,8 @@ h6 {
 .codepen > * {
   border: 1px solid red;
 }
+
+.code {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
