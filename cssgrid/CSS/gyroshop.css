@@ -56,5 +56,13 @@ body {
       background-position: bottom right;
       background-size: cover;
       background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      padding: 50px;
    }
+    .hero > * {
+      background-color: yellow;
+    }
     
