@@ -48,10 +48,13 @@ body {
       grid-template-rows: 1fr 1fr;
       grid-gap: 20px;
       text-align: center;
+      min-height: 400px;
     }
     .hero {
-      background-color: lightgrey;
       grid-row: span 2;
-    }
+      background: lightgrey url(../img/gyro.jpg);
+      background-position: bottom right;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
     
-
