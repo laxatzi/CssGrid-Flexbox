@@ -64,7 +64,8 @@ body {
       position: relative;
    }
     .hero > * {
-      background-color: yellow;
+      background-color: var(--yellow);
+      padding: 5px;
     }
     .hero:after {
       position: absolute;
@@ -76,3 +77,16 @@ body {
       content: "";
     }
     
+   .cta {
+     background-color: var(--yellow);
+     display: grid;
+     justify-content: center;
+     align-content: center;
+   }
+   .cta p {
+     margin: 0;
+   }
+
+  .price {
+    font-size: 6rem;
+  }
