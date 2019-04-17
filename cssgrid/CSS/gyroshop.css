@@ -1,4 +1,4 @@
-
+/* Basic styles */
 :root {
   --yellow: #ffc600;
   --black: #272727;
@@ -41,7 +41,7 @@ body {
     img {
       max-width: 100%;
     }
-
+/* Top - header, hero, ctas */
     .top {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -90,3 +90,5 @@ body {
   .price {
     font-size: 6rem;
   }
+
+/* Navigation */
