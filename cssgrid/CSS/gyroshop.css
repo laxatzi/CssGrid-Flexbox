@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
   font-size: 10px;
   font-weight: 900;
   color: var(--black);
@@ -46,6 +47,7 @@ body {
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-gap: 20px;
+      text-align: center;
     }
     .hero {
       background-color: lightgrey;
