@@ -40,5 +40,16 @@ body {
     img {
       max-width: 100%;
     }
+
+    .top {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    .hero {
+      background-color: lightgrey;
+      grid-row: span 2;
+    }
     
 
