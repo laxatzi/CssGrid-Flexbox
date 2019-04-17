@@ -95,8 +95,9 @@ body {
 .menu ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
 }
 .menu li {
   list-style: none;
@@ -109,4 +110,9 @@ body {
   color: var(--black);
   display: block;
   text-transform: uppercase;
+
+}
+
+[aria-controls="menu-list"] {
+  display: none;
 }
