@@ -220,6 +220,17 @@ body {
     max-height: 50rem;
     transform: rotateX(0);
   }
+  [aria-expanded="false"]  .close{
+      display: none;
+  }
+  [aria-expanded="true"]  .close{
+    display: inline-block;
+}
+[aria-expanded="true"]  .open{
+  display: none;
+}
+
+
 }
 @media screen and (max-width: 700px) {
 
