@@ -46,14 +46,13 @@ body {
 /* Top - header, hero, ctas */
     .top {
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 1fr 1fr;
       grid-gap: 20px;
+      grid-template-areas: "hero hero cta1" "hero hero cta2";
       text-align: center;
       min-height: 400px;
     }
     .hero {
-      grid-row: span 2;
+      grid-area: hero;
       background: lightgrey url(../img/gyro.jpg);
       background-position: bottom right;
       background-size: cover;
@@ -85,12 +84,20 @@ body {
      justify-content: center;
      align-content: center;
    }
+
+   .cta1 {
+     grid-area: cta1;
+   }
+   .cta2 {
+     grid-area: cta2;
+   }
    .cta p {
      margin: 0;
    }
 
   .price {
     font-size: 6rem;
+    font-weight: 300;
   }
 
 /* Navigation */
@@ -192,3 +199,12 @@ body {
     background-image: linear-gradient(to right, var(--yellow), transparent);
 
   }
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+
+    .top {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
+    }
+}
