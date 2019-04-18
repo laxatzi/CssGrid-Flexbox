@@ -111,7 +111,15 @@
     </section>
   </div> <!-- end of wrapper -->
 <!-- script section -->
-<script></script>
+<script>
+    const navButton = document.querySelector('button[aria-expanded]');
+    
+    function toggleMenu() {
+      console.log("Toggle!");
+    }
+
+    navButton.addEventListener('click', toggleMenu);
+</script>
   
 </body>
 </html>
