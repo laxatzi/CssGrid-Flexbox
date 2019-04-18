@@ -254,5 +254,9 @@ body {
                          "cta1" 
                          "cta2";
    }
+   .about  {
+     padding: 0;
+  
+   }
 }
 
