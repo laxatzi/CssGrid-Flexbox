@@ -208,6 +208,11 @@ body {
   [aria-controls="menu-list"] {
     display: block;
   }
+  .menu ul {
+    max-height: 0;
+    transform: rotateX(90deg);
+    transition: all .5s;
+  }
 }
 @media screen and (max-width: 700px) {
 
