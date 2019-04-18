@@ -114,8 +114,9 @@
 <script>
     const navButton = document.querySelector('button[aria-expanded]');
     
-    function toggleMenu() {
-      console.log("Toggle!");
+    function toggleMenu({target}) {
+      const expanded = target.getAttribute('aria-expanded')=== 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
     }
 
     navButton.addEventListener('click', toggleMenu);
