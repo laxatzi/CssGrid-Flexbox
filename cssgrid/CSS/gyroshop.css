@@ -26,18 +26,18 @@ body {
 
    /* WRAPPER */
    .wrapper {
-    min-height: 500px;
-    padding: 20px;
+    min-height: 50rem;
+    padding: 2rem;
 /* grid properties */
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 2rem;
   }
 
  
     button {
       background: #ffc600;
       border: 0;
-      padding: 10px 20px;
+      padding: 1rem 2rem;
     }
     
     img {
@@ -46,10 +46,10 @@ body {
 /* Top - header, hero, ctas */
     .top {
       display: grid;
-      grid-gap: 20px;
+      grid-gap: 2rem;
       grid-template-areas: "hero hero cta1" "hero hero cta2";
       text-align: center;
-      min-height: 400px;
+      min-height: 40rem;
     }
     .hero {
       grid-area: hero;
@@ -61,7 +61,7 @@ body {
       justify-content: center;
       align-items: start;
       flex-direction: column;
-      padding: 50px;
+      padding: 5rem;
       position: relative;
    }
     .hero > * {
@@ -104,7 +104,7 @@ body {
 .menu ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 1rem;
   padding: 0;
   margin: 20px 0 0;
 }
@@ -204,7 +204,21 @@ body {
 @media screen and (max-width: 700px) {
 
     .top {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 2fr 1fr;
+     grid-template-areas: "hero hero" "cta1 cta2";
     }
+    .price {
+      font-size: 2.5rem;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  .top {
+    grid-template-areas: "hero" 
+                         "cta1" 
+                         "cta2";
+   }
+
+
 }
