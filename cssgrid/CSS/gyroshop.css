@@ -147,6 +147,17 @@ body {
   background-color: #fff;
   padding: 4rem;  
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
   align-items: center;  
 }
+
+.about__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+   .about__details p {
+     margin: 5px;
+   }
