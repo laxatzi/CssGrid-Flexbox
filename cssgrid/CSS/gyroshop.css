@@ -211,6 +211,7 @@ body {
   }
   .menu ul {
     max-height: 0;
+    overflow: hidden; /* we need both max-height=0 AND overflow= hidden to hide the edges of the LIs*/
     transform: rotateX(90deg);
     transition: all .5s;
   }
