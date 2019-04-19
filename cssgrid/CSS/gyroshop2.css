@@ -206,7 +206,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 730px) {
   /* menu properties */
   .menu {
     order: -1;
@@ -220,7 +220,9 @@ body {
      font-weight: 800;
  }
 
-
+ul#menulist a {
+  font-size: 80%;
+}
   /* end of menu properties */
     .top {
      grid-template-areas: "hero hero" 
