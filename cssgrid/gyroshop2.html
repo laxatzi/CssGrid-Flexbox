@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="css/gyroshop.css">
+  <link rel="stylesheet" href="css/gyroshop2.css">
   <title>Responsive Gyroshop Website!</title>
 </head>
 
@@ -32,10 +32,10 @@
    </div>
   <!-- navigation -->
     <nav class="menu">
-      <button aria-expanded="false" aria-controls="menu-list" id="menu-btn" onclick= "toggle('menu-list', 'menu-btn')">
+      <a aria-expanded="false" aria-controls="menulist" id="menubtn" onclick= "toggle('menulist', 'menubtn')">
         <span class="humburger">☰</span>
-      </button>
-      <ul id="menu-list">
+      </a>
+      <ul id="menulist">
         <li>
           <a href="">Tacos</a>
         </li>
@@ -110,14 +110,19 @@
   </div> <!-- end of wrapper -->
 <!-- script section -->
 <script>
-    const navButton = document.querySelector('button[aria-expanded]');
-    
-    function toggleMenu({target}) {
-      const expanded = target.getAttribute('aria-expanded')=== 'true' || false;
-      navButton.setAttribute('aria-expanded', !expanded);
-    }
-
-    navButton.addEventListener('click', toggleMenu);
+function toggle(menulist, menubtn) {
+    const navlist = document.getElementById('menulist');
+	if (navlist.style.display != 'none') 
+	  {
+	  navlist.style.display = 'none';
+      document.getElementById(menubtn).setAttribute('aria-expanded', 'false');
+  }
+  else
+  {
+  navlist.style.display = '';
+  document.getElementById(menubtn).setAttribute('aria-expanded', 'true');
+	  }
+  }
 </script>
   
 </body>
