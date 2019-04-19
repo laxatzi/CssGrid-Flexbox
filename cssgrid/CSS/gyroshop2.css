@@ -125,6 +125,7 @@ body {
 
 #menubtn {
   display: none;
+
 }
 
 /* Features */
@@ -204,20 +205,23 @@ body {
   }
 
 /* Media Queries */
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 700px) {
+  /* menu properties */
   .menu {
     order: -1;
     /* perspective: 800px; */
   }
  #menubtn {
     display: block;
-  }
-  #menulist{
-    display: none;
-  }
-}
-@media screen and (max-width: 700px) {
+ }
+ #menubtn span {
+     font-size: 30px;
+     font-weight: 800;
+ }
 
+
+  /* end of menu properties */
     .top {
      grid-template-areas: "hero hero" 
                           "cta1 cta2";
@@ -226,6 +230,7 @@ body {
       font-size: 2.5rem;
 
     }
+
     .about {
       grid-template-columns: 1fr; 
     }
