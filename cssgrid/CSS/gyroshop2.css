@@ -1,1 +1,265 @@
+/* Basic styles */
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0,0,0, .07);
+  background-image: linear-gradient(260deg,  blue, purple);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+   /* WRAPPER */
+   .wrapper {
+    min-height: 50rem;
+    padding: 2rem;
+/* grid properties */
+  display: grid;
+  grid-gap: 2rem;
+  }
+
+ 
+    button {
+      background: #ffc600;
+      border: 0;
+      padding: 1rem 2rem;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+/* Top - header, hero, ctas */
+    .top {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-areas: "hero hero cta1" 
+                            "hero hero cta2";
+      text-align: center;
+      min-height: 40rem;
+    }
+    .hero {
+      grid-area: hero;
+      background: lightgrey url(../img/gyro.jpg);
+      background-position: bottom right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      padding: 5rem;
+      position: relative;
+   }
+    .hero > * {
+      background-color: var(--yellow);
+      padding: 5px;
+    }
+    .hero:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.3);
+      content: "";
+    }
+    
+   .cta {
+     background-color: var(--yellow);
+     display: grid;
+     justify-content: center;
+     align-content: center;
+   }
+
+   .cta1 {
+     grid-area: cta1;
+   }
+   .cta2 {
+     grid-area: cta2;
+   }
+   .cta p {
+     margin: 0;
+   }
+
+  .price {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+
+/* Navigation */
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--yellow);
+  color: var(--black);
+  display: block;
+  text-transform: uppercase;
+
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.feature .icon {
+  font-size: 4rem;
+}
+
+.feature p {
+  color: rgba(0, 0, 0, .5);
+}
+
+/* About section */
+.about {
+  background-color: #fff;
+  padding: 4rem;  
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  align-items: center;  
+}
+.about figcaption {
+  font-size: 70%;
+}
+.about__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+   .about__details p {
+     margin: 5px;
+   }
+
+  /* Gallery section */
+
+  .gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+ .gallery h2 {
+      grid-column: 1 / -1 ;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;  
+      grid-gap: 20px;
+      align-items: center;
+  }
+
+  .gallery h2:before,
+  .gallery h2:after {
+    display: block;
+    content: "";
+    background-image: linear-gradient(to left, var(--yellow), transparent);
+    height: 10px;
+  }
+  .gallery h2:after {
+    background-image: linear-gradient(to right, var(--yellow), transparent);
+
+  }
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .menu {
+    order: -1;
+    perspective: 800px;
+  }
+  [aria-controls="menu-list"] {
+    display: block;
+  }
+  .menu ul {
+    max-height: 0;
+    overflow: hidden; /* we need both max-height=0 AND overflow= hidden to hide the edges of the LIs*/
+    transform: rotateX(90deg);
+    transition: all .5s;
+  }
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 50rem;
+    transform: rotateX(0);
+  }
+  [aria-expanded="false"]  .close{
+      display: none;
+  }
+  [aria-expanded="true"]  .close{
+    display: inline-block;
+}
+[aria-expanded="true"]  .open{
+  display: none;
+}
+
+
+}
+@media screen and (max-width: 700px) {
+
+    .top {
+     grid-template-areas: "hero hero" 
+                          "cta1 cta2";
+    }
+    .price {
+      font-size: 2.5rem;
+
+    }
+    .about {
+      grid-template-columns: 1fr; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .top {
+    grid-template-areas: "hero" 
+                         "cta1" 
+                         "cta2";
+   }
+   .about  {
+     padding: 0;
+  
+   }
+}
+
 
