@@ -214,6 +214,8 @@ body {
   }
  #menubtn {
     display: block;
+    width: 15%;
+    margin: 0 auto;
  }
  #menubtn span {
      font-size: 30px;
@@ -248,6 +250,9 @@ ul#menulist a {
 }
 
 @media screen and (max-width: 500px) {
+   
+  #menubtn { width: 33%; }
+
   .top {
     grid-template-areas: "hero" 
                          "cta1" 
