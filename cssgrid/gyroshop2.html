@@ -32,7 +32,7 @@
    </div>
   <!-- navigation -->
     <nav class="menu">
-      <a href="#" aria-expanded="true"  id="menubtn" onclick= "toggle('menulist', 'menubtn')">
+      <a href="#" aria-expanded="false" id="menubtn" onclick= "toggle('menulist', 'menubtn')">
         <span class="open">☰</span>
         <span class="close">×</span>
       </a>
@@ -113,15 +113,15 @@
 <script>
 function toggle(menulist, menubtn) {
     const navlist = document.getElementById('menulist');
-	if (navlist.style.display != 'none') 
+	if (navlist.style.display != 'grid') 
 	  {
-	  navlist.style.display = 'none';
-      document.getElementById(menubtn).setAttribute('aria-expanded', 'false');
+	  navlist.style.display = 'grid';
+      document.getElementById(menubtn).setAttribute('aria-expanded', 'true');
   }
   else
   {
   navlist.style.display = '';
-  document.getElementById(menubtn).setAttribute('aria-expanded', 'true');
+  document.getElementById(menubtn).setAttribute('aria-expanded', 'false');
 	  }
   }
 </script>
