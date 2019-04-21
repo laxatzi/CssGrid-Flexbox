@@ -28,6 +28,8 @@
     .post {
       display: grid;
       max-width: 1000px;
-      margin: 20px auto;
+      margin: 200px auto;
+      grid-gap: 20px;
+      grid-template-columns: 2fr 7fr 3fr;
     }
 
