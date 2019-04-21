@@ -33,3 +33,6 @@
       grid-template-columns: 2fr 7fr 3fr;
     }
 
+    .post > * {
+      grid-column: 2/ span 1;
+    }
