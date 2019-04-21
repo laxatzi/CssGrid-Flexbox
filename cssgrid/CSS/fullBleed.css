@@ -44,5 +44,12 @@
 
     figcaption {
       font-size: 12px;
+   }
 
-    }
+   .post > blockquote {
+     grid-column: 1 / -1;
+     font-style: italic;
+     font-size: 60px;
+     text-align: center;
+     margin: 0;
+   }
