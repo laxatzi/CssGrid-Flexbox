@@ -36,3 +36,7 @@
     .post > * {
       grid-column: 2/ span 1;
     }
+
+    .post > figure {
+      margin: 0;
+    }
