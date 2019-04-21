@@ -58,6 +58,8 @@
    .tip {
      padding: 10px;
      background-color: #fafafa;
+      grid-row: span 5;
+      align-self: start;
    }
 
    .tip-left {
@@ -66,4 +68,8 @@
      border-right: 2px solid var(--yellow);
    }
 
+   .tip-right {
+     grid-column: span 1 / -1;
+     border-left: 2px solid var(--yellow);
+   }
   
