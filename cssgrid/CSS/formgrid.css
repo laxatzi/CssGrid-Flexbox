@@ -43,7 +43,7 @@
           margin: 0 auto;
         }
 
-        /* cssgrid fallback */
+        /* cssgrid form fallback */
       input,
       textarea,
       select,
@@ -58,7 +58,28 @@
          text-align: right;
          padding: .5rem 2rem 0 0;
       }
+      input[type="checkbox"],
+      input[type="radio"],
+      button {
+            float: left;
+            width: auto;
+            margin: 1rem 1rem 0 30%;
+      }
+     input[type="checkbox"]+label,
+     input[type="radio"] + label {
+        width: auto;
+        text-align: left;
+     }
+     /* cssgrid layout */
+      .formgrid {
+         display: grid;
+         grid-template-columns: 1fr 1em 2fr;
+         grid-gap: .5rem .10rem;
+         align-items: center;
+         grid-auto-flow: dense;
+      }
 
+   /* media max-width 500px */
         @media screen and (max-width: 500px ) {
          .container {
               padding: 20px 5%;
