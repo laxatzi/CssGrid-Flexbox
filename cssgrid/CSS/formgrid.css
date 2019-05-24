@@ -42,6 +42,23 @@
            font-size: 100%;
           margin: 0 auto;
         }
+
+        /* cssgrid fallback */
+      input,
+      textarea,
+      select,
+      button {
+         clear: both;
+         float: right;
+         width: 70%;
+      }
+      label {
+         width: 30%;
+         float: left;
+         text-align: right;
+         padding: .5rem 2rem 0 0;
+      }
+
         @media screen and (max-width: 500px ) {
          .container {
               padding: 20px 5%;
