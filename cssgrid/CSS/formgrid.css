@@ -78,7 +78,14 @@
          align-items: center;
          grid-auto-flow: dense;
       }
-
+      textarea,
+      select,
+      input,
+      button {
+         margin: 0;
+         width: auto;
+         grid-column: 2/span 2;
+      }
    /* media max-width 500px */
         @media screen and (max-width: 500px ) {
          .container {
