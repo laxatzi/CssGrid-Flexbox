@@ -85,8 +85,14 @@
          margin: 0;
          width: auto;
          grid-column: 2/span 2;
+         padding: 10px 0;
       }
-
+      select option,
+      select {
+         color: rgb(107, 106, 106);
+         padding: 10px;
+         font-size: .75em;
+      }
       input[type="radio"],
       input[type="checkbox"] {
          margin:0;
@@ -99,9 +105,19 @@
          padding-left: 10px;
          margin: 0;
       }
-
+      label {
+         width: auto;   
+      }
       textarea {
          max-width: 100%;
+      }
+      button {
+         background-color: rgb(118, 224, 224);
+         font-size: .75em;
+         border: none;
+         font-weight: 900;
+         color:  rgb(51, 47, 47);
+         letter-spacing: 1px;
       }
    /* media max-width 500px */
         @media screen and (max-width: 500px ) {
