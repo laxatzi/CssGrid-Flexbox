@@ -97,6 +97,8 @@ blockquote:before {
  font-size:  10rem; 
  top: 50px;
 }
+/* NAVIGATION */
+
 .nav {
      margin: 0;
      padding: 0;
@@ -155,7 +157,13 @@ blockquote:before {
    top: -25%;
    width: 12vw;
 }
-
+.arrow {
+   font-size: 75%;
+   margin: 0;
+   padding: 0;
+   width: 5vh;
+   text-align: center;
+}
 /* banner area */
 .banner_area {
    background-image:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url(../img/developer_coding.jpg);
@@ -174,14 +182,5 @@ blockquote:before {
    .nav a {
       font-size: 85%;
    }
-}
-@media screen and (max-width: 800px) {
-   .nav ul {
-      flex-direction: column;
-   }
-   .nav li {
-      position: relative;
-      width: 100%;
-      text-align: center;
-   }
+
 }
