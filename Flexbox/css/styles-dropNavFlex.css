@@ -155,3 +155,12 @@ blockquote:before {
    top: -25%;
    width: 12vw;
 }
+
+/* banner area */
+.banner_area {
+   background-image: url(../img/developer_coding.jpg);
+
+}
+.banner_area h2 {
+
+}
