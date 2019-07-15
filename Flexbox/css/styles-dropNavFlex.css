@@ -110,7 +110,6 @@ blockquote:before {
    position: relative;
    width: 100%;
    text-align: center;
-   line-height: 2.5;
 }
 .nav a {
    display: flex;
@@ -119,6 +118,7 @@ blockquote:before {
    color: #fff;
    background-color: orangered;
    font-weight: 500;
+   height: 10vh;
 }
 .nav a:hover,
 .nav a:focus {
@@ -163,10 +163,9 @@ blockquote:before {
    background-position: center;
    background-repeat: no-repeat;
    height: 80vh;
-}
-.banner_area  {
    display: flex;
    align-items: center;
    justify-content: center;
    color: orangered;
 }
+
