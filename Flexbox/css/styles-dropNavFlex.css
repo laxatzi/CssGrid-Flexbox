@@ -1,11 +1,7 @@
 
 :root {
    --color: #222;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 10px;
+   --color_alt: rgb(226, 114, 23);
 }
 
 *,
@@ -14,6 +10,11 @@ html {
      box-sizing: inherit;
 }
 
+html {
+   box-sizing: border-box;
+   font-size: 10px;
+ }
+ 
 body {
   margin: 0;
   padding: 0;
@@ -61,7 +62,7 @@ a {
 
 a:hover,
 a:focus {
-  color: rgb(226, 114, 23);
+  color: var(--color_alt);
 }
 
 li {
@@ -95,4 +96,27 @@ blockquote:before {
  color: #ededed;
  font-size:  10rem; 
  top: 50px;
+}
+.nav {
+     margin: 0;
+     padding: 0;
+}
+.nav ul {
+   margin: 0;
+   padding: 0;
+}
+.nav li {
+   line-height: 1.5;
+}
+.nav a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   background-color: orangered;
+   font-weight: bold;
+}
+.nav a:hover,
+.nav a:focus {
+   color: #ccc;
 }
