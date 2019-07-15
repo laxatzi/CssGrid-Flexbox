@@ -106,7 +106,7 @@ blockquote:before {
    padding: 0;
 }
 .nav li {
-   line-height: 1.5;
+   line-height: 1.75;
 }
 .nav a {
    display: flex;
@@ -114,9 +114,10 @@ blockquote:before {
    justify-content: center;
    color: #fff;
    background-color: orangered;
-   font-weight: bold;
+   font-weight: 500;
 }
 .nav a:hover,
 .nav a:focus {
    color: #ccc;
+   background-color: tomato;
 }
