@@ -113,62 +113,45 @@ blockquote:before {
    width: 20%;
    text-align: center;
 }
-.nav a {
+.nav ul li > ul{
+   display: none;
+   flex-direction: none;
+}
+.nav ul li:hover  > ul {
    display: flex;
-   align-items: center;
-   justify-content: center;
-   color: #fff;
-   background-color: orangered;
-   font-weight: 500;
-   height: 10vh;
 }
-.nav a:hover,
-.nav a:focus {
-   color: #ccc;
-   background-color: tomato;
-}
-
-.nav li:hover .dropdown1 > li  {
-   display: block;
-   top: 0;
-}
-.dropdown1,
-.dropdown2  {
-  
-   display: flex;
-   flex-direction: column;
-}
-.dropdown1 li,
-.dropdown2 li {
-  width: 100%;
-}
-.dropdown1  {
-   display: flex;
-   flex-direction: column; 
-   position: absolute;
+.nav ul li > ul li {
    width: 100%;
 }
 
-.dropdown1  li:hover .dropdown2  li {
-   display: block;
-}
-.dropdown2 li{
-   display: none;
-}
-.dropdown2 {
-   display: flex;
-   flex-direction: column;
+/* .dropdown2 {
    position: relative;
-   left: 100%;
-   top: -25%;
-   width: 12vw;
 }
+.dropdown2 li {
+   position: absolute;
+   top: 0;
+   left: 100%;
+} */
 .arrow {
    font-size: 75%;
    margin: 0;
    padding: 0;
    width: 5vh;
    text-align: center;
+}
+
+.nav a {
+   display: block;
+   color: #fff;
+   background-color: orangered;
+   font-weight: 500;
+   padding: 15px;
+   text-align: center;
+}
+.nav a:hover,
+.nav a:focus {
+   color: #ccc;
+   background-color: tomato;
 }
 /* banner area */
 .banner_area {
