@@ -159,8 +159,14 @@ blockquote:before {
 /* banner area */
 .banner_area {
    background-image: url(../img/developer_coding.jpg);
-
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 80vh;
 }
-.banner_area h2 {
-
+.banner_area  {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: orangered;
 }
