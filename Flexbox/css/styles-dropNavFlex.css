@@ -109,6 +109,8 @@ blockquote:before {
 .nav li {
    position: relative;
    width: 100%;
+   text-align: center;
+   line-height: 2.5;
 }
 .nav a {
    display: flex;
@@ -122,4 +124,34 @@ blockquote:before {
 .nav a:focus {
    color: #ccc;
    background-color: tomato;
+}
+
+.nav li:hover .dropdown1 > li  {
+   display: block;
+   top: 0;
+}
+.dropdown1 >  li {
+   position: relative;
+   display: none;
+}
+.dropdown1  {
+   display: flex;
+   flex-direction: column; 
+   position: absolute;
+   width: 100%;
+}
+
+.dropdown1  li:hover .dropdown2  li {
+   display: block;
+}
+.dropdown2 li{
+   display: none;
+}
+.dropdown2 {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 100%;
+   top: -25%;
+   width: 12vw;
 }
