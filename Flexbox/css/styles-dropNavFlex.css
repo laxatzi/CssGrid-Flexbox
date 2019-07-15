@@ -158,7 +158,7 @@ blockquote:before {
 
 /* banner area */
 .banner_area {
-   background-image: url(../img/developer_coding.jpg);
+   background-image:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url(../img/developer_coding.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
