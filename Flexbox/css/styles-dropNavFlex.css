@@ -104,9 +104,11 @@ blockquote:before {
 .nav ul {
    margin: 0;
    padding: 0;
+   display: flex;
 }
 .nav li {
-   line-height: 1.75;
+   position: relative;
+   width: 100%;
 }
 .nav a {
    display: flex;
