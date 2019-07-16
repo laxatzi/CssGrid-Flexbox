@@ -10,10 +10,12 @@
   <meta name="keywords" content="keywords,here">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles-dropNavFlex.css" type="text/css">
   </head>
   <body>
    <header>
+<<<<<<< HEAD
    <div class="nav">
       <ul>
          
@@ -32,20 +34,61 @@
                <li><a href="#">Web Design</a></li>
             </ul>
          </li>
+=======
+    <!-- navigation -->
+    <div class="navbar">
+      <div class="brand"><a href="#"> PHPpeeta</a></div>
+      <div href="#" class="toggle_menu" aria-expanded="false"  onclick= "toggle()">
+            <span class="open"><ion-icon name="menu"></ion-icon></span>
+            <span class="close"><ion-icon name="close"></ion-icon></span>
+      </div>
+      <nav>
+         <div><a href="#">Home</a></div>
+         <div><a href="#">About</a></div>
+         <div><a href="#">Services <span class="arrow"> &#x25bc;</span></a>
+            <!-- <div class="dropdown1">
+               <div><a href="#">Web Hosting</a></div>
+               <div><a href="#">Web Development <span class="arrow">  &#x25bc;</span></a>
+                   <div class="dropdown2">
+                     <div><a href="#">PHP</a></div>
+                     <div><a href="#">Laravel</a></div>
+                     <div><a href="#">WordPress</a></div>
+                  </div> 
+               </div>
+               <div><a href="#">Web Design</a></div>
+            </div> -->
+         </div>
+>>>>>>> 15caf909e33356f5943d5b580191c666a6357391
 
-         <li><a href="#">Portfolio</a></li>
-         <li><a href="#">Contact</a></li>
-      </ul>
+         <div><a href="#">Portfolio</a></div>
+         <div><a href="#">Contact</a></div>
+      </nav>
    </div>
    <div class="banner_area">
       <h1>PHP Development</h1>
    </div>
   </header>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script>
+  <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/  NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
         // copyright year updater
-        $('#year').text(new Date().getFullYear());</script>
+        $('#year').text(new Date().getFullYear());
+        
+        // Toggle function
+        function toggle() {
+         const navlist = document.querySelector('.nav_menu');
+            if (navlist.style.display != 'flex') 
+               {
+               navlist.style.display = 'flex';
+                  document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'true');
+            }
+            else
+            {
+            navlist.style.display = '';
+            document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'false');
+               }
+     }
+        
+  </script>
   </body>
 </html>
