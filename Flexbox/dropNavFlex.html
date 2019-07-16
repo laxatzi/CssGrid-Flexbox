@@ -10,26 +10,33 @@
   <meta name="keywords" content="keywords,here">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link href="https://unpkg.com/ionicons@4.5.10-1/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles-dropNavFlex.css" type="text/css">
   </head>
   <body>
    <header>
-   <div class="navbar">
+    <!-- navigation -->
+    <div class="navbar">
+      <div class="brand">PHPpita</div>
+      <div href="#" class="toggle_menu" aria-expanded="false"  onclick= "toggle()">
+            <span class="open"><ion-icon name="menu"></ion-icon></span>
+            <span class="close"><ion-icon name="close"></ion-icon></span>
+      </div>
       <nav>
          <div><a href="#">Home</a></div>
          <div><a href="#">About</a></div>
          <div><a href="#">Services <span class="arrow"> &#x25bc;</span></a>
-            <ul class="dropdown1">
+            <div class="dropdown1">
                <div><a href="#">Web Hosting</a></div>
                <div><a href="#">Web Development <span class="arrow">  &#x25bc;</span></a>
-                   <ul class="dropdown2">
+                   <div class="dropdown2">
                      <div><a href="#">PHP</a></div>
                      <div><a href="#">Laravel</a></div>
                      <div><a href="#">WordPress</a></div>
-                  </ul> 
+                  </div> 
                </div>
                <div><a href="#">Web Design</a></div>
-            </ul>
+            </div>
          </div>
 
          <div><a href="#">Portfolio</a></div>
@@ -40,10 +47,9 @@
       <h1>PHP Development</h1>
    </div>
   </header>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script>
+  <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/  NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
         // copyright year updater
         $('#year').text(new Date().getFullYear());</script>
   </body>
