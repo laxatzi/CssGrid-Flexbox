@@ -110,7 +110,7 @@ header {
 }
 /* NAVIGATION */
 
-.nav {
+.navbar {
      margin: 0;
      padding: 0;
 }
@@ -120,18 +120,18 @@ header {
    display: flex;
    flex-wrap: wrap;
 }
-.nav ul li {
+.navbar ul li {
    width: 20%;
    text-align: center;
 }
-.nav ul li > ul{
+.navbar ul li > ul{
    display: none;
    flex-direction: column;
 }
-.nav ul li:hover  > ul {
+.navbar ul li:hover  > ul {
    display: flex;
 }
-.nav ul li > ul li {
+.navbar ul li > ul li {
    width: 100%;
 }
 
@@ -143,7 +143,7 @@ header {
    text-align: center;
 }
 
-.nav a {
+.navbar a {
    display: block;
    color: #fff;
    background-color: orangered;
@@ -151,8 +151,8 @@ header {
    padding: 15px;
    text-align: center;
 }
-.nav a:hover,
-.nav a:focus {
+.navbar a:hover,
+.navbar a:focus {
    color: #ccc;
    background-color: tomato;
 }
@@ -168,14 +168,14 @@ header {
 
 /* Media */
 @media screen and (max-width: 900px) {
-   .nav a {
+   .navbar a {
       font-size: 85%;
    }
 
 }
 
 @media screen and (max-width: 800px) {
-   .nav ul li{
+   .navbar ul li{
      width: 100%;
    }
 }
