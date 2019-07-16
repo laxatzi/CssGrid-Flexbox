@@ -109,18 +109,16 @@ header {
    flex-direction: column;
 }
 /* NAVIGATION */
-
 .navbar {
-     margin: 0;
-     padding: 0;
-}
-.navbar ul {
    margin: 0;
    padding: 0;
    display: flex;
    flex-wrap: wrap;
 }
-.navbar ul li {
+.navbar nav {
+   display: flex;
+}
+/* .navbar ul li {
    width: 20%;
    text-align: center;
 }
@@ -133,7 +131,7 @@ header {
 }
 .navbar ul li > ul li {
    width: 100%;
-}
+} */
 
 .arrow {
    font-size: 75%;
@@ -156,7 +154,9 @@ header {
    color: #ccc;
    background-color: tomato;
 }
-
+.toggle_menu {
+   display: none;
+ }
 /* banner area */
 .banner_area {
    color: orangered;
@@ -175,7 +175,22 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-   .navbar ul li{
-     width: 100%;
+   .toggle_menu {
+      display: block;
+      width: 15%;
+      margin: 0 auto;
+   }
+   .toggle_menu span {
+         font-size: 30px;
+         font-weight: 800;
+   }
+   [aria-expanded="false"]  .close{
+      display: none;
+   }
+   [aria-expanded="true"]  .close{
+   display: inline-block;
+   }
+   [aria-expanded="true"]  .open{
+   display: none;
    }
 }
