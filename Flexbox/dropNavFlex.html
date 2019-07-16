@@ -17,7 +17,7 @@
    <header>
     <!-- navigation -->
     <div class="navbar">
-      <div class="brand"><a href="#"> PHPpita</a></div>
+      <div class="brand"><a href="#"> PHPpeeta</a></div>
       <div href="#" class="toggle_menu" aria-expanded="false"  onclick= "toggle()">
             <span class="open"><ion-icon name="menu"></ion-icon></span>
             <span class="close"><ion-icon name="close"></ion-icon></span>
@@ -56,9 +56,9 @@
         // Toggle function
         function toggle() {
          const navlist = document.querySelector('.nav_menu');
-            if (navlist.style.display != 'grid') 
+            if (navlist.style.display != 'flex') 
                {
-               navlist.style.display = 'grid';
+               navlist.style.display = 'flex';
                   document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'true');
             }
             else

@@ -115,12 +115,14 @@ header {
    padding: 0;
    display: flex;
    flex-wrap: wrap;
-   border: 1px solid yellow;
    background-color:var(--color_dist);
 }
 .navbar .brand {
-   border: 1px solid green;
    flex: 1;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-left: 5vw;
 }
 .navbar nav {
    display: flex;
@@ -155,7 +157,7 @@ header {
 .navbar a {
    display: block;
    color: #fff;
-   background-color: rgb(233, 78, 21);
+   background-color: var(--color_dist);
    font-weight: 500;
    padding: 15px;
    text-align: center;
@@ -163,14 +165,14 @@ header {
 .navbar a:hover,
 .navbar a:focus {
    color: #ccc;
-   background-color: tomato;
+   background-color: var(--color_alt);
 }
 .toggle_menu {
    display: none;
  }
 /* banner area */
 .banner_area {
-   color: orangered;
+   color: var(--color_dist);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -186,14 +188,25 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  .navbar {
+     flex-direction: column;
+  }
    .toggle_menu {
-      display: block;
-      width: 15%;
-      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
    .toggle_menu span {
-         font-size: 30px;
+         font-size: 3em;
          font-weight: 800;
+         color: rgb(245, 240, 240);
+
+   }
+   .navbar nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
    }
    [aria-expanded="false"]  .close{
       display: none;
