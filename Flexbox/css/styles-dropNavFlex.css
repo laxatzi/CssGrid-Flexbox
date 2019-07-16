@@ -2,6 +2,7 @@
 :root {
    --color: #222;
    --color_alt: rgb(226, 114, 23);
+   --color_dist:  rgb(233, 78, 21);
 }
 
 *,
@@ -114,10 +115,20 @@ header {
    padding: 0;
    display: flex;
    flex-wrap: wrap;
+   border: 1px solid yellow;
+   background-color:var(--color_dist);
+}
+.navbar .brand {
+   border: 1px solid green;
+   flex: 1;
 }
 .navbar nav {
    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 2;
 }
+
 /* .navbar ul li {
    width: 20%;
    text-align: center;
@@ -144,7 +155,7 @@ header {
 .navbar a {
    display: block;
    color: #fff;
-   background-color: orangered;
+   background-color: rgb(233, 78, 21);
    font-weight: 500;
    padding: 15px;
    text-align: center;
