@@ -51,6 +51,23 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/  NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
         // copyright year updater
-        $('#year').text(new Date().getFullYear());</script>
+        $('#year').text(new Date().getFullYear());
+        
+        // Toggle function
+        function toggle() {
+         const navlist = document.querySelector('.nav_menu');
+            if (navlist.style.display != 'grid') 
+               {
+               navlist.style.display = 'grid';
+                  document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'true');
+            }
+            else
+            {
+            navlist.style.display = '';
+            document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'false');
+               }
+     }
+        
+  </script>
   </body>
 </html>
