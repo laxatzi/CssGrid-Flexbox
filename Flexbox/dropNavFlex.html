@@ -34,10 +34,10 @@
                <div><a href="#">Web Hosting</a></div>
    <!-- dropdown -->
                <div class="dropdown2">
-                  <div class="dropdown_menu-item" onclick="myFunction()">
+                  <div class="dropdown_menu-item" onclick="myFunction2()">
                     <a href="#">Web Development <span class="arrow">&#x25bc;</span></a>
                   </div>
-                  <div id="dropdown1" class="dropdown_content">
+                  <div id="dropdown2" class="dropdown_content">
                         <div><a href="#">PHP</a></div>
                         <div><a href="#">Laravel</a></div>
                         <div><a href="#">WordPress</a></div>
@@ -81,7 +81,10 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("dropdown1").classList.toggle("show");
 }
+function myFunction2() {
+   document.getElementById("dropdown2").classList.toggle("show");
 
+}
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(evt) {
   if (!evt.target.matches('.dropdown_menu-item')) {
