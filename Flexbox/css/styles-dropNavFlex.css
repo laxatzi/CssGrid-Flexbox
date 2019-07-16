@@ -165,7 +165,13 @@ header {
    display: inline-block;
    border: 1px solid white;
  }
- 
+ .dropdown_content {
+    display: none;
+ }
+
+ .show {
+    display: block;
+ }
 /* banner area */
 .banner_area {
    color: var(--color_dist);

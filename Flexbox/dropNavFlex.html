@@ -27,8 +27,8 @@
          <div><a href="#">About</a></div>
    <!-- dropdown -->
          <div class="dropdown1">
-         <div><a href="#">Services <span class="arrow"> &#x25bc;</span></a> </div>
-            <div id="dropown1" class="dropdown-content">
+         <div class="dropdown_menu-item" onclick="myFunction()"><a href="#">Services <span class="arrow"> &#x25bc;</span></a> </div>
+            <div id="dropown1" class="dropdown_content">
                <div><a href="#">Web Hosting</a></div>
                <div><a href="#">Web Development <span class="arrow">  &#x25bc;</span></a>
                    <!-- <div class="dropdown2">
@@ -55,7 +55,7 @@
         // copyright year updater
         $('#year').text(new Date().getFullYear());
         
-        // Toggle function
+        // Menu Toggle function
         function toggle() {
          const navlist = document.querySelector('.nav_menu');
             if (navlist.style.display != 'flex') 
@@ -69,6 +69,28 @@
             document.querySelector('.toggle_menu').setAttribute('aria-expanded', 'false');
                }
      }
+
+       // Menu item toggle function
+       /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("dropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(evt) {
+  if (!evt.target.matches('.dropdown_menu-item')) {
+    var dropdowns = document.getElementsByClassName("dropdown_content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
         
   </script>
   </body>
