@@ -114,7 +114,6 @@ header {
    margin: 0;
    padding: 0;
    display: flex;
-   flex-wrap: wrap;
    background-color:var(--color_dist);
 }
 .navbar .brand {
@@ -125,27 +124,15 @@ header {
    margin-left: 5vw;
    font-style: oblique;
 }
+.navbar .brand a {
+   font-size: 1.25em;
+}
 .navbar .nav_menu {
    display: flex;
    align-items: center;
    justify-content: center;
-   flex: 2;
+   flex: 4;
    }
-
-/* .navbar ul li {
-   width: 20%;
-   text-align: center;
-}
-.navbar ul li > ul{
-   display: none;
-   flex-direction: column;
-}
-.navbar ul li:hover  > ul {
-   display: flex;
-}
-.navbar ul li > ul li {
-   width: 100%;
-} */
 
 .arrow {
    font-size: 75%;
@@ -203,7 +190,7 @@ header {
          color: rgb(245, 240, 240);
 
    }
-   .navbar nav {
+   .navbar .nav_menu {
       display: none;
       align-items: center;
       justify-content: center;
