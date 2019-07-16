@@ -161,9 +161,11 @@ header {
 
  /* Dropdown menus */
  .dropdown1 {
-    display: none;
-    flex-direction: column;
+   position: relative;
+   display: inline-block;
+   border: 1px solid white;
  }
+ 
 /* banner area */
 .banner_area {
    color: var(--color_dist);
