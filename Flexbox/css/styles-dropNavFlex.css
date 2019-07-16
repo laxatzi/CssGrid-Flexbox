@@ -125,7 +125,7 @@ header {
    margin-left: 5vw;
    font-style: oblique;
 }
-.navbar nav {
+.navbar .nav_menu {
    display: flex;
    align-items: center;
    justify-content: center;
