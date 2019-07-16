@@ -123,12 +123,14 @@ header {
    justify-content: flex-start;
    align-items: center;
    margin-left: 5vw;
+   font-style: oblique;
 }
 .navbar nav {
    display: flex;
    align-items: center;
    justify-content: center;
    flex: 2;
+   
 }
 
 /* .navbar ul li {
