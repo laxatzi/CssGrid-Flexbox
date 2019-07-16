@@ -163,8 +163,8 @@ header {
  /* Dropdown menus */
  .dropdown1 {
    position: relative;
-   display: inline-block;
-   border: 1px solid white;
+   display: flex;
+   flex-direction: column;
    padding: 15px;
    text-align: center;
    color: var(--color_white);
@@ -173,11 +173,14 @@ header {
     display: none;
     position: absolute;
     overflow: auto;
+    top: 100%;
+    left:0;
     z-index: 1;
  }
 
  .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
  }
 /* banner area */
 .banner_area {
@@ -200,6 +203,8 @@ header {
   .navbar {
      flex-direction: column;
   }
+
+  /* styles for  menu toggling  */
    .toggle_menu {
       display: flex;
       align-items: center;
@@ -217,6 +222,7 @@ header {
       justify-content: center;
       flex-direction: column;
    }
+   /* we use aria-expanded in js code to  toggle icons */
    [aria-expanded="false"]  .close{
       display: none;
    }
@@ -225,5 +231,18 @@ header {
    }
    [aria-expanded="true"]  .open{
    display: none;
+   }
+   
+   /* make dropdown content (list) stretch by giving relative position. Correct top distance */
+   .dropdown_content {
+      position: relative;
+      top: 0;
+   }
+   /* remove padding and margin from brand */
+   .navbar .brand a,
+   .navbar .brand {
+      margin: 0;
+      margin-left: 5vw;
+      padding: 0;
    }
 }
