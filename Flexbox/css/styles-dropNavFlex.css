@@ -169,17 +169,20 @@ header {
    text-align: center;
    color: var(--color_white);
  }
- .dropdown_content {
+ .dropdown2 {
+    position: relative;
+ }
+ .dropdown_content
+ {
     display: none;
     position: absolute;
-    overflow: auto;
-    top: 100%;
     left:0;
+    top: 100%;
     z-index: 1;
-    height: 30em;
     width: 10em;
- }
-
+    height: 18em;
+   }
+ 
  .show {
     display: flex;
     flex-direction: column;
