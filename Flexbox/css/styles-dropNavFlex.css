@@ -241,8 +241,7 @@ header {
    /* remove padding and margin from brand */
    .navbar .brand a,
    .navbar .brand {
-      margin: 0;
-      margin-left: 5vw;
+      margin: 5px 0 0 5vw;
       padding: 0;
    }
 }
