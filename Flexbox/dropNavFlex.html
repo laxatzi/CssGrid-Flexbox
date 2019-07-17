@@ -25,7 +25,6 @@
             <span class="close"><ion-icon name="close"></ion-icon></span>
       </div>
       <nav class="nav_menu">
-         <div><a href="#">Home</a></div>
          <div><a href="#">About</a></div>
    <!-- dropdown -->
          <div class="dropdown1">
@@ -83,19 +82,21 @@ function clickToDrop2() {
 
 }
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (event.target.matches('.banner_area, .nav_menu, .brand')) {
+ window.onclick = function(event) {
+    if (event.target.matches('.banner_area, .nav_menu, .brand')) {
+    
+      var dropdowns = document.getElementsByClassName("dropdown_content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        } // end of second conditional
+     } // end of loop
+  } // end of conditional
+}; //end of function
 
-     var dropdowns = document.getElementsByClassName("dropdown_content");
-     var i;
-     for (i = 0; i < dropdowns.length; i++) {
-       var openDropdown = dropdowns[i];
-       if (openDropdown.classList.contains('show')) {
-         openDropdown.classList.remove('show');
-       }
-    }
-  }
-}
+
   </script>
   </body>
 </html>
