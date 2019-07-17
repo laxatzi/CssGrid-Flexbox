@@ -27,14 +27,14 @@
          <div><a href="#">About</a></div>
    <!-- dropdown -->
          <div class="dropdown1">
-         <div class="dropdown_menu-item" onclick="myFunction()">
+         <div class="dropdown_menu-item" onclick="clickToDrop()">
             <a href="#">Services <span class="arrow">&#x25bc;</span></a>
          </div>
             <div id="dropdown1" class="dropdown_content">
                <div><a href="#">Web Hosting</a></div>
    <!-- dropdown -->
                <div class="dropdown2">
-                  <div class="dropdown_menu-item" onclick="myFunction2()">
+                  <div class="dropdown_menu-item" onclick="clickToDrop2()">
                     <a href="#">Web Development <span class="arrow">&#x25bc;</span></a>
                   </div>
                   <div id="dropdown2" class="dropdown_content">
@@ -78,10 +78,10 @@
        // Menu item toggle function
        /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function clickToDrop() {
   document.getElementById("dropdown1").classList.toggle("show");
 }
-function myFunction2() {
+function clickToDrop2() {
    document.getElementById("dropdown2").classList.toggle("show");
 
 }
