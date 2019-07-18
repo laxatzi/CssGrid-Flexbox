@@ -85,7 +85,7 @@
          margin: 0;
          width: auto;
          grid-column: 2/span 2;
-         padding: 10px 0;
+         padding: 10px;
       }
       select option,
       select {
