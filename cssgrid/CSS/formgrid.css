@@ -88,9 +88,13 @@
          padding: 10px;
       }
       input:invalid {
+         box-shadow: none; /* remove "noisy" pink shadow */
+      }
+      input.invalid {
          background-color: rgb(243, 194, 194);
          border: none;
       }
+   
       select option,
       select {
          color: rgb(107, 106, 106);
