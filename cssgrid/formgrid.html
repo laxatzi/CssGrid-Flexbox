@@ -45,24 +45,23 @@
    </div>
    <!-- Script section -->
 <script>
-      const invalidClassName = 'invalid';
-      const inputs = document.querySelectorAll('input, select, textarea');
+      
+   const inputs = document.querySelectorAll('input, select, textarea');
 
-         inputs.forEach(function (input) {
+         inputs.forEach(input => {
          // Add a css class on submit when the input is invalid.
-         input.addEventListener('invalid', function () {
-            input.classList.add(invalidClassName)
-         });
+         input.addEventListener(
+            'invalid', 
+            event => {
+            input.classList.add("error");
+         }, 
+         false);
 
-         // Remove the class when the input becomes valid.
-         // 'input' will fire each time the user types
-         input.addEventListener('input', function () {
-            if (input.validity.valid) {
-               input.classList.remove(invalidClassName)
-            }
+         input.addEventListener(
+            'input'
+         )
          });
-
-         });
+       
 </script>
 </body>
 </html>

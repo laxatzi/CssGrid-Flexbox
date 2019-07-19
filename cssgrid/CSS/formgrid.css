@@ -87,11 +87,10 @@
          grid-column: 2/span 2;
          padding: 10px;
       }
-      input:invalid {
-         box-shadow: none; /* remove "noisy" pink shadow */
-      }
-      input.invalid {
-         box-shadow: rgb(245, 89, 115);
+    
+      input.error {
+         border-color: orangered;
+         box-shadow: 0 0 1px orangered;
       }
    
       select option,
