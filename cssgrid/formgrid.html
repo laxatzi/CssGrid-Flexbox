@@ -47,16 +47,18 @@
 <script>
       
    const inputs = document.querySelectorAll('input, select, textarea');
+         
+         // Add custom form styles on invalid values
 
          inputs.forEach(input => {
-         // Add a css class on submit when the input is invalid.
+         // Add the css class 'error' on submit when the input is invalid.
          input.addEventListener(
             'invalid', 
             event => {
             input.classList.add("error");
          }, 
          false);
-
+        // Remove the 'error' class when input is corrected
          input.addEventListener(
             'input',        //the input event fires when value of input/select/textarea changes
             event => {
