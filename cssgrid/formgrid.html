@@ -45,13 +45,14 @@
    </div>
    <!-- Script section -->
 <script>
+      // Add custom form styles on invalid values
       
-   const inputs = document.querySelectorAll('input, select, textarea');
+        //Get all the inputs...
+        const inputs = document.querySelectorAll('input, select, textarea');
          
-         // Add custom form styles on invalid values
 
          inputs.forEach(input => {
-         // Add the css class 'error' on submit when the input is invalid.
+         //  Just before submit, the invalid event will fire, adding the css class 'error' on inputs.
          input.addEventListener(
             'invalid', 
             event => {
@@ -66,7 +67,15 @@
             },
             false
          );
-         });
+
+        // Optional: Check validity onblur
+       // This On :invalid inputs, it will trigger the invalid event and add the .error class we programmed above.
+               input.addEventListener('blur', (event) => {
+                  input.checkValidity();
+               });
+         
+         }); // end of main function
+
        
 </script>
 </body>
