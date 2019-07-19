@@ -90,7 +90,6 @@
     
       input.error {
          border-color: orangered;
-         box-shadow: 0 0 1px orangered;
       }
    
       select option,
