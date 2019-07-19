@@ -58,8 +58,12 @@
          false);
 
          input.addEventListener(
-            'input'
-         )
+            'input',        //the input event fires when value of input/select/textarea changes
+            event => {
+               input.classList.remove("error");
+            },
+            false
+         );
          });
        
 </script>
