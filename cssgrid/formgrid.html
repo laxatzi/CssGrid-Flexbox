@@ -42,7 +42,7 @@
             <textarea    id="otherSkills" name="otherSkills"></textarea>
             <label for="otherSkills">Other Skills</label>
           <!-- submit form -->
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="this.addEventListener('click', clickStopper, false)  ">Submit</button>
             </div>
          </fieldset>
       </form>
@@ -84,12 +84,27 @@
 
       // DISABLE SUBMIT BUTTON AFTER FIRST SUBMITTING 
 
+      // function clickStopper(e)
+      //    {
+      //       alert("click was blocked"); // ** you can remove this line **
+      //       e.preventDefault(); // equivalent to 'return false'
+      //    }
+
+
       const form = document.querySelector('form');
-      // disable the submit button first when submiting the form for the first time by setting the disabled attr
+      // disable the submit button first when submitting the form for the first time by setting the disabled attr
       form.addEventListener('submit', function() {
          this.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
       }, false);
-       
+
+//if the form has multiple submit buttons we’d need to use querySelectorAll to disable all of them
+
+      /* form.addEventListener('submit', function() {
+         var buttons = this.querySelectorAll('input[type="submit"]');
+          buttons.forEach(function(button) {
+             button.setAttribute('disabled', 'disabled');
+          });
+       }, false); */
 </script>
 </body>
 </html>
