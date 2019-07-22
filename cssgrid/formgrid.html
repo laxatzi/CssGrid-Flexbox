@@ -80,6 +80,13 @@
          
          }); // end of main function
 
+      // Disable multiple form submits
+
+      const form = document.querySelector('form');
+      // disable the submit button first when submiting the form for the first time by setting the disabled attr
+      form.addEventListener('submit', function() {
+         this.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
+      }, false);
        
 </script>
 </body>
