@@ -84,19 +84,21 @@
 
       // DISABLE SUBMIT BUTTON AFTER FIRST SUBMITTING 
 
-      // function clickStopper(e)
-      //    {
-      //       alert("click was blocked"); // ** you can remove this line **
-      //       e.preventDefault(); // equivalent to 'return false'
-      //    }
+      // First Method
 
+       function clickStopper(e)
+        {
+         e.preventDefault(); // equivalent to 'return false'
+      }
 
-      const form = document.querySelector('form');
-      // disable the submit button first when submitting the form for the first time by setting the disabled attr
-      form.addEventListener('submit', function() {
-         this.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
-      }, false);
+     // second Method
 
+    /*      const form = document.querySelector('form');
+               // disable the submit button first when submitting the form for the first time by setting the disabled attr
+               form.addEventListener('submit', function() {
+                  this.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
+               }, false);
+  */
 //if the form has multiple submit buttons we’d need to use querySelectorAll to disable all of them
 
       /* form.addEventListener('submit', function() {
