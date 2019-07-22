@@ -89,7 +89,10 @@
       }
     
       input.error {
-         border-color: orangered;
+         border-color: transparent;
+         outline: 1px solid orangered;
+         box-shadow: 0 0 4px orangered;
+
       }
    
       select option,
